@@ -128,10 +128,11 @@ def fix_seeds(seed, with_torch=True, with_cuda=True):
     np.random.seed(seed)
     if with_torch:
         torch.manual_seed(seed)
-    if with_cuda:
+    if with_cuda and torch.cuda.is_available():
         torch.cuda.manual_seed(seed)
         torch.cuda.manual_seed_all(seed)
-        torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 
 def compute_and_store_final_results(

@@ -1,4 +1,5 @@
 """PatchCore and PatchCore detection methods."""
+import json
 import logging
 import os
 import pickle
@@ -587,6 +588,10 @@ class PatchCore(torch.nn.Module):
         }
         with open(self._params_file(save_path, prepend), "wb") as save_file:
             pickle.dump(patchcore_params, save_file, pickle.HIGHEST_PROTOCOL)
+        with open(
+            os.path.join(save_path, prepend + "patchcore_params.json"), "w"
+        ) as save_file:
+            json.dump(patchcore_params, save_file, indent=2, sort_keys=True)
 
     def load_from_path(
         self,
