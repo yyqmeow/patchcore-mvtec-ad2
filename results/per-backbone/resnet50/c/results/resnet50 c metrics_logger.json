@@ -1,0 +1,98 @@
+[
+    {
+        "category": "can",
+        "eAucPro_0.05": 0.0,
+        "eClassF1": 0.0,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.0,
+        "eClassF1_mixed": 0.0,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.47484567901234565,
+        "pixel_auc": 0.5,
+        "timestamp": "14.11.25"
+    },
+    {
+        "category": "fabric",
+        "eAucPro_0.05": 0.0,
+        "eClassF1": 0.0,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.0,
+        "eClassF1_mixed": 0.0,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.5265993265993266,
+        "pixel_auc": 0.5,
+        "timestamp": "14.11.25"
+    },
+    {
+        "category": "fruit_jelly",
+        "eAucPro_0.05": 0.0,
+        "eClassF1": 0.0,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.0,
+        "eClassF1_mixed": 0.0,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.7825000000000001,
+        "pixel_auc": 0.5,
+        "timestamp": "15.11.25"
+    },
+    {
+        "category": "rice",
+        "eAucPro_0.05": 0.0,
+        "eClassF1": 0.0,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.0,
+        "eClassF1_mixed": 0.0,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.641005291005291,
+        "pixel_auc": 0.5,
+        "timestamp": "15.11.25"
+    },
+    {
+        "category": "sheet_metal",
+        "eAucPro_0.05": 0.0,
+        "eClassF1": 0.0,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.0,
+        "eClassF1_mixed": 0.0,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.600925925925926,
+        "pixel_auc": 0.5,
+        "timestamp": "15.11.25"
+    },
+    {
+        "category": "vial",
+        "eAucPro_0.05": 0.0,
+        "eClassF1": 0.0,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.0,
+        "eClassF1_mixed": 0.0,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.785578231292517,
+        "pixel_auc": 0.5,
+        "timestamp": "15.11.25"
+    },
+    {
+        "category": "wallplugs",
+        "eAucPro_0.05": 0.0,
+        "eClassF1": 0.0,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.0,
+        "eClassF1_mixed": 0.0,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.605925925925926,
+        "pixel_auc": 0.5,
+        "timestamp": "15.11.25"
+    },
+    {
+        "category": "walnuts",
+        "eAucPro_0.05": 0.0,
+        "eClassF1": 0.0,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.0,
+        "eClassF1_mixed": 0.0,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.7011111111111111,
+        "pixel_auc": 0.5,
+        "timestamp": "15.11.25"
+    }
+]

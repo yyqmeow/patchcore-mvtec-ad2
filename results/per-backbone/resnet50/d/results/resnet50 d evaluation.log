@@ -1,0 +1,193 @@
+2025-11-16 19:34:31,097 [INFO] 
+开始处理类别: can
+2025-11-16 19:34:31,097 [INFO] ============================================================
+2025-11-16 19:34:31,097 [INFO] Processing category: can
+2025-11-16 19:34:31,098 [INFO] No existing model found for can at models\can\patchcore_coreset.npz
+2025-11-16 19:34:31,490 [INFO] Building memory bank...
+2025-11-16 19:34:44,702 [INFO] Reached max samples limit: 50000
+2025-11-16 19:34:45,347 [INFO] Final memory bank size: 50000 patches
+2025-11-16 19:34:45,394 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-16 21:18:19,686 [INFO] Saved model to models\can\patchcore_coreset.npz
+2025-11-16 21:18:19,728 [INFO] Start evaluation on test_public ...
+2025-11-16 21:18:20,755 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\can\ground_truth\bad
+2025-11-16 21:18:25,424 [INFO] Total anomaly pixels in all masks: 276
+2025-11-16 21:18:25,424 [INFO] 测试样本: 162个 (正常: 72, 异常: 90)
+2025-11-16 21:18:25,425 [INFO] 加载的掩码数量: 90
+2025-11-16 21:18:25,425 [INFO] 样本 000_overexposed.png 掩码统计: 总和=1, 形状=(224, 224)
+2025-11-16 21:18:25,425 [INFO] 样本 000_regular.png 掩码统计: 总和=1, 形状=(224, 224)
+2025-11-16 21:18:25,425 [INFO] 样本 000_shift_1.png 掩码统计: 总和=1, 形状=(224, 224)
+2025-11-16 21:23:40,961 [INFO] can 评估结果:
+2025-11-16 21:23:40,961 [INFO]   eAucPro_0.05: 69.6097
+2025-11-16 21:23:40,961 [INFO]   eClassF1: 71.8367
+2025-11-16 21:23:40,961 [INFO]   eSegF1: 0.0346
+2025-11-16 21:23:40,961 [INFO]   图像AUROC: 0.5011
+2025-11-16 21:23:40,962 [INFO]   像素AUROC: 0.6961
+2025-11-16 21:23:40,981 [INFO] 
+开始处理类别: fabric
+2025-11-16 21:23:40,982 [INFO] ============================================================
+2025-11-16 21:23:40,982 [INFO] Processing category: fabric
+2025-11-16 21:23:40,983 [INFO] No existing model found for fabric at models\fabric\patchcore_coreset.npz
+2025-11-16 21:23:41,607 [INFO] Building memory bank...
+2025-11-16 21:24:25,581 [INFO] Reached max samples limit: 50000
+2025-11-16 21:24:27,554 [INFO] Final memory bank size: 50000 patches
+2025-11-16 21:24:27,641 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-16 22:45:55,771 [INFO] Saved model to models\fabric\patchcore_coreset.npz
+2025-11-16 22:45:55,788 [INFO] Start evaluation on test_public ...
+2025-11-16 22:45:56,256 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\fabric\ground_truth\bad
+2025-11-16 22:46:00,389 [INFO] Total anomaly pixels in all masks: 56436
+2025-11-16 22:46:00,389 [INFO] 测试样本: 156个 (正常: 66, 异常: 90)
+2025-11-16 22:46:00,390 [INFO] 加载的掩码数量: 90
+2025-11-16 22:46:00,390 [INFO] 样本 000_overexposed.png 掩码统计: 总和=9209, 形状=(224, 224)
+2025-11-16 22:46:00,390 [INFO] 样本 000_regular.png 掩码统计: 总和=9209, 形状=(224, 224)
+2025-11-16 22:46:00,391 [INFO] 样本 000_shift_1.png 掩码统计: 总和=9209, 形状=(224, 224)
+2025-11-16 22:48:38,892 [INFO] fabric 评估结果:
+2025-11-16 22:48:38,892 [INFO]   eAucPro_0.05: 46.9639
+2025-11-16 22:48:38,892 [INFO]   eClassF1: 75.4237
+2025-11-16 22:48:38,893 [INFO]   eSegF1: 3.1521
+2025-11-16 22:48:38,893 [INFO]   图像AUROC: 0.6498
+2025-11-16 22:48:38,893 [INFO]   像素AUROC: 0.4696
+2025-11-16 22:48:38,900 [INFO] 
+开始处理类别: fruit_jelly
+2025-11-16 22:48:38,900 [INFO] ============================================================
+2025-11-16 22:48:38,900 [INFO] Processing category: fruit_jelly
+2025-11-16 22:48:38,901 [INFO] No existing model found for fruit_jelly at models\fruit_jelly\patchcore_coreset.npz
+2025-11-16 22:48:39,151 [INFO] Building memory bank...
+2025-11-16 22:48:52,748 [INFO] Reached max samples limit: 50000
+2025-11-16 22:48:53,387 [INFO] Final memory bank size: 50000 patches
+2025-11-16 22:48:53,436 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-16 23:48:29,292 [INFO] Saved model to models\fruit_jelly\patchcore_coreset.npz
+2025-11-16 23:48:29,300 [INFO] Start evaluation on test_public ...
+2025-11-16 23:48:29,530 [INFO] Found 60 GT masks in D:\motrix\mvtec_ad_2\fruit_jelly\ground_truth\bad
+2025-11-16 23:48:31,189 [INFO] Total anomaly pixels in all masks: 40429
+2025-11-16 23:48:31,189 [INFO] 测试样本: 80个 (正常: 20, 异常: 60)
+2025-11-16 23:48:31,189 [INFO] 加载的掩码数量: 60
+2025-11-16 23:48:31,189 [INFO] 样本 000_overexposed.png 掩码统计: 总和=2087, 形状=(224, 224)
+2025-11-16 23:48:31,190 [INFO] 样本 000_regular.png 掩码统计: 总和=2087, 形状=(224, 224)
+2025-11-16 23:48:31,190 [INFO] 样本 000_shift_1.png 掩码统计: 总和=2087, 形状=(224, 224)
+2025-11-16 23:49:42,105 [INFO] fruit_jelly 评估结果:
+2025-11-16 23:49:42,105 [INFO]   eAucPro_0.05: 90.7434
+2025-11-16 23:49:42,105 [INFO]   eClassF1: 88.5496
+2025-11-16 23:49:42,105 [INFO]   eSegF1: 21.3330
+2025-11-16 23:49:42,105 [INFO]   图像AUROC: 0.7833
+2025-11-16 23:49:42,105 [INFO]   像素AUROC: 0.9074
+2025-11-16 23:49:42,109 [INFO] 
+开始处理类别: rice
+2025-11-16 23:49:42,109 [INFO] ============================================================
+2025-11-16 23:49:42,109 [INFO] Processing category: rice
+2025-11-16 23:49:42,110 [INFO] No existing model found for rice at models\rice\patchcore_coreset.npz
+2025-11-16 23:49:42,388 [INFO] Building memory bank...
+2025-11-16 23:50:08,262 [INFO] Reached max samples limit: 50000
+2025-11-16 23:50:09,314 [INFO] Final memory bank size: 50000 patches
+2025-11-16 23:50:09,363 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-17 00:51:43,806 [INFO] Saved model to models\rice\patchcore_coreset.npz
+2025-11-17 00:51:43,814 [INFO] Start evaluation on test_public ...
+2025-11-17 00:51:44,081 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\rice\ground_truth\bad
+2025-11-17 00:51:48,204 [INFO] Total anomaly pixels in all masks: 11822
+2025-11-17 00:51:48,204 [INFO] 测试样本: 132个 (正常: 42, 异常: 90)
+2025-11-17 00:51:48,204 [INFO] 加载的掩码数量: 90
+2025-11-17 00:51:48,204 [INFO] 样本 000_overexposed.png 掩码统计: 总和=33, 形状=(224, 224)
+2025-11-17 00:51:48,205 [INFO] 样本 000_regular.png 掩码统计: 总和=33, 形状=(224, 224)
+2025-11-17 00:51:48,205 [INFO] 样本 000_shift_1.png 掩码统计: 总和=33, 形状=(224, 224)
+2025-11-17 00:54:03,252 [INFO] rice 评估结果:
+2025-11-17 00:54:03,252 [INFO]   eAucPro_0.05: 76.4834
+2025-11-17 00:54:03,253 [INFO]   eClassF1: 81.0811
+2025-11-17 00:54:03,253 [INFO]   eSegF1: 3.6916
+2025-11-17 00:54:03,253 [INFO]   图像AUROC: 0.6034
+2025-11-17 00:54:03,253 [INFO]   像素AUROC: 0.7648
+2025-11-17 00:54:03,259 [INFO] 
+开始处理类别: sheet_metal
+2025-11-17 00:54:03,259 [INFO] ============================================================
+2025-11-17 00:54:03,259 [INFO] Processing category: sheet_metal
+2025-11-17 00:54:03,259 [INFO] No existing model found for sheet_metal at models\sheet_metal\patchcore_coreset.npz
+2025-11-17 00:54:03,508 [INFO] Building memory bank...
+2025-11-17 00:54:10,423 [INFO] Final memory bank size: 26852 patches
+2025-11-17 00:54:10,451 [INFO] Running KMeans on 26852 patches -> 10000 centers
+2025-11-17 01:45:16,328 [INFO] Saved model to models\sheet_metal\patchcore_coreset.npz
+2025-11-17 01:45:16,333 [INFO] Start evaluation on test_public ...
+2025-11-17 01:45:16,578 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\sheet_metal\ground_truth\bad
+2025-11-17 01:45:20,054 [INFO] Total anomaly pixels in all masks: 26355
+2025-11-17 01:45:20,054 [INFO] 测试样本: 114个 (正常: 24, 异常: 90)
+2025-11-17 01:45:20,054 [INFO] 加载的掩码数量: 90
+2025-11-17 01:45:20,054 [INFO] 样本 000_overexposed.png 掩码统计: 总和=133, 形状=(224, 224)
+2025-11-17 01:45:20,054 [INFO] 样本 000_regular.png 掩码统计: 总和=133, 形状=(224, 224)
+2025-11-17 01:45:20,055 [INFO] 样本 000_shift_1.png 掩码统计: 总和=133, 形状=(224, 224)
+2025-11-17 01:47:04,174 [INFO] sheet_metal 评估结果:
+2025-11-17 01:47:04,175 [INFO]   eAucPro_0.05: 76.3838
+2025-11-17 01:47:04,175 [INFO]   eClassF1: 88.6700
+2025-11-17 01:47:04,175 [INFO]   eSegF1: 5.6199
+2025-11-17 01:47:04,175 [INFO]   图像AUROC: 0.6009
+2025-11-17 01:47:04,175 [INFO]   像素AUROC: 0.7638
+2025-11-17 01:47:04,180 [INFO] 
+开始处理类别: vial
+2025-11-17 01:47:04,180 [INFO] ============================================================
+2025-11-17 01:47:04,180 [INFO] Processing category: vial
+2025-11-17 01:47:04,181 [INFO] No existing model found for vial at models\vial\patchcore_coreset.npz
+2025-11-17 01:47:04,433 [INFO] Building memory bank...
+2025-11-17 01:47:13,461 [INFO] Reached max samples limit: 50000
+2025-11-17 01:47:14,000 [INFO] Final memory bank size: 50000 patches
+2025-11-17 01:47:14,054 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-17 02:45:20,167 [INFO] Saved model to models\vial\patchcore_coreset.npz
+2025-11-17 02:45:20,175 [INFO] Start evaluation on test_public ...
+2025-11-17 02:45:20,426 [INFO] Found 105 GT masks in D:\motrix\mvtec_ad_2\vial\ground_truth\bad
+2025-11-17 02:45:22,909 [INFO] Total anomaly pixels in all masks: 149080
+2025-11-17 02:45:22,910 [INFO] 测试样本: 140个 (正常: 35, 异常: 105)
+2025-11-17 02:45:22,911 [INFO] 加载的掩码数量: 105
+2025-11-17 02:45:22,911 [INFO] 样本 000_overexposed.png 掩码统计: 总和=543, 形状=(224, 224)
+2025-11-17 02:45:22,911 [INFO] 样本 000_regular.png 掩码统计: 总和=542, 形状=(224, 224)
+2025-11-17 02:45:22,911 [INFO] 样本 000_shift_1.png 掩码统计: 总和=543, 形状=(224, 224)
+2025-11-17 02:47:26,797 [INFO] vial 评估结果:
+2025-11-17 02:47:26,797 [INFO]   eAucPro_0.05: 91.1675
+2025-11-17 02:47:26,797 [INFO]   eClassF1: 89.5928
+2025-11-17 02:47:26,797 [INFO]   eSegF1: 22.4008
+2025-11-17 02:47:26,797 [INFO]   图像AUROC: 0.7605
+2025-11-17 02:47:26,797 [INFO]   像素AUROC: 0.9117
+2025-11-17 02:47:26,802 [INFO] 
+开始处理类别: wallplugs
+2025-11-17 02:47:26,802 [INFO] ============================================================
+2025-11-17 02:47:26,803 [INFO] Processing category: wallplugs
+2025-11-17 02:47:26,803 [INFO] No existing model found for wallplugs at models\wallplugs\patchcore_coreset.npz
+2025-11-17 02:47:27,061 [INFO] Building memory bank...
+2025-11-17 02:47:40,020 [INFO] Reached max samples limit: 50000
+2025-11-17 02:47:40,682 [INFO] Final memory bank size: 50000 patches
+2025-11-17 02:47:40,726 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-17 03:46:29,433 [INFO] Saved model to models\wallplugs\patchcore_coreset.npz
+2025-11-17 03:46:29,442 [INFO] Start evaluation on test_public ...
+2025-11-17 03:46:29,687 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\wallplugs\ground_truth\bad
+2025-11-17 03:46:33,603 [INFO] Total anomaly pixels in all masks: 12173
+2025-11-17 03:46:33,603 [INFO] 测试样本: 150个 (正常: 60, 异常: 90)
+2025-11-17 03:46:33,603 [INFO] 加载的掩码数量: 90
+2025-11-17 03:46:33,603 [INFO] 样本 000_overexposed.png 掩码统计: 总和=199, 形状=(224, 224)
+2025-11-17 03:46:33,604 [INFO] 样本 000_regular.png 掩码统计: 总和=199, 形状=(224, 224)
+2025-11-17 03:46:33,604 [INFO] 样本 000_shift_1.png 掩码统计: 总和=199, 形状=(224, 224)
+2025-11-17 03:48:49,905 [INFO] wallplugs 评估结果:
+2025-11-17 03:48:49,906 [INFO]   eAucPro_0.05: 78.0026
+2025-11-17 03:48:49,906 [INFO]   eClassF1: 76.8473
+2025-11-17 03:48:49,906 [INFO]   eSegF1: 1.0025
+2025-11-17 03:48:49,906 [INFO]   图像AUROC: 0.6463
+2025-11-17 03:48:49,906 [INFO]   像素AUROC: 0.7800
+2025-11-17 03:48:49,912 [INFO] 
+开始处理类别: walnuts
+2025-11-17 03:48:49,912 [INFO] ============================================================
+2025-11-17 03:48:49,912 [INFO] Processing category: walnuts
+2025-11-17 03:48:49,913 [INFO] No existing model found for walnuts at models\walnuts\patchcore_coreset.npz
+2025-11-17 03:48:50,308 [INFO] Building memory bank...
+2025-11-17 03:49:15,706 [INFO] Reached max samples limit: 50000
+2025-11-17 03:49:16,770 [INFO] Final memory bank size: 50000 patches
+2025-11-17 03:49:16,818 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-17 04:46:24,435 [INFO] Saved model to models\walnuts\patchcore_coreset.npz
+2025-11-17 04:46:24,443 [INFO] Start evaluation on test_public ...
+2025-11-17 04:46:24,701 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\walnuts\ground_truth\bad
+2025-11-17 04:46:28,647 [INFO] Total anomaly pixels in all masks: 82662
+2025-11-17 04:46:28,647 [INFO] 测试样本: 150个 (正常: 60, 异常: 90)
+2025-11-17 04:46:28,647 [INFO] 加载的掩码数量: 90
+2025-11-17 04:46:28,647 [INFO] 样本 000_overexposed.png 掩码统计: 总和=127, 形状=(224, 224)
+2025-11-17 04:46:28,647 [INFO] 样本 000_regular.png 掩码统计: 总和=127, 形状=(224, 224)
+2025-11-17 04:46:28,648 [INFO] 样本 000_shift_1.png 掩码统计: 总和=127, 形状=(224, 224)
+2025-11-17 04:49:00,846 [INFO] walnuts 评估结果:
+2025-11-17 04:49:00,846 [INFO]   eAucPro_0.05: 81.4477
+2025-11-17 04:49:00,846 [INFO]   eClassF1: 76.9912
+2025-11-17 04:49:00,846 [INFO]   eSegF1: 19.4319
+2025-11-17 04:49:00,846 [INFO]   图像AUROC: 0.7333
+2025-11-17 04:49:00,846 [INFO]   像素AUROC: 0.8145
+2025-11-17 04:49:00,853 [INFO] 全部类别处理完成.
+2025-11-17 04:49:00,853 [INFO] 结果已保存到 results\metrics_logger.json

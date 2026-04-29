@@ -1,0 +1,314 @@
+2025-11-19 14:09:43,834 [INFO] 
+Start category: can
+2025-11-19 14:09:43,834 [INFO] ============================================================
+2025-11-19 14:09:43,834 [INFO] Processing category: can
+2025-11-19 14:09:43,834 [INFO] No existing model found for can at models\can\patchcore_coreset.npz
+2025-11-19 14:09:44,593 [INFO] Building memory bank...
+2025-11-19 14:09:54,424 [INFO] Reached max samples limit: 12000
+2025-11-19 14:09:55,535 [INFO] Final memory bank size: 12000 patches
+2025-11-19 14:09:55,544 [INFO] Selecting greedy coreset: N=12000, k=2000
+2025-11-19 14:09:57,178 [INFO] Greedy selection progress: 100/2000
+2025-11-19 14:09:58,741 [INFO] Greedy selection progress: 200/2000
+2025-11-19 14:10:00,311 [INFO] Greedy selection progress: 300/2000
+2025-11-19 14:10:01,860 [INFO] Greedy selection progress: 400/2000
+2025-11-19 14:10:03,586 [INFO] Greedy selection progress: 500/2000
+2025-11-19 14:10:05,125 [INFO] Greedy selection progress: 600/2000
+2025-11-19 14:10:06,565 [INFO] Greedy selection progress: 700/2000
+2025-11-19 14:10:08,099 [INFO] Greedy selection progress: 800/2000
+2025-11-19 14:10:09,583 [INFO] Greedy selection progress: 900/2000
+2025-11-19 14:10:11,153 [INFO] Greedy selection progress: 1000/2000
+2025-11-19 14:10:12,738 [INFO] Greedy selection progress: 1100/2000
+2025-11-19 14:10:14,433 [INFO] Greedy selection progress: 1200/2000
+2025-11-19 14:10:15,964 [INFO] Greedy selection progress: 1300/2000
+2025-11-19 14:10:17,420 [INFO] Greedy selection progress: 1400/2000
+2025-11-19 14:10:19,116 [INFO] Greedy selection progress: 1500/2000
+2025-11-19 14:10:20,604 [INFO] Greedy selection progress: 1600/2000
+2025-11-19 14:10:22,160 [INFO] Greedy selection progress: 1700/2000
+2025-11-19 14:10:23,902 [INFO] Greedy selection progress: 1800/2000
+2025-11-19 14:10:25,556 [INFO] Greedy selection progress: 1900/2000
+2025-11-19 14:10:27,458 [INFO] Saved model to models\can\patchcore_coreset.npz
+2025-11-19 14:10:29,097 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\can\ground_truth\bad
+2025-11-19 14:10:30,392 [INFO] Test samples: 162 (normal: 72, anomaly: 90)
+2025-11-19 14:10:30,394 [INFO] Loaded GT masks: 90
+2025-11-19 14:17:21,040 [INFO] can results:
+2025-11-19 14:17:21,041 [INFO]   eAucPro_0.05: 71.8662
+2025-11-19 14:17:21,041 [INFO]   eClassF1: 71.4286
+2025-11-19 14:17:21,041 [INFO]   eSegF1: 0.0199
+2025-11-19 14:17:21,042 [INFO]   image AUROC: 0.4485
+2025-11-19 14:17:21,042 [INFO]   pixel AUROC: 0.7187
+2025-11-19 14:17:21,054 [INFO] 
+Start category: fabric
+2025-11-19 14:17:21,055 [INFO] ============================================================
+2025-11-19 14:17:21,055 [INFO] Processing category: fabric
+2025-11-19 14:17:21,055 [INFO] No existing model found for fabric at models\fabric\patchcore_coreset.npz
+2025-11-19 14:17:22,727 [INFO] Building memory bank...
+2025-11-19 14:17:37,981 [INFO] Reached max samples limit: 12000
+2025-11-19 14:17:39,992 [INFO] Final memory bank size: 12000 patches
+2025-11-19 14:17:40,003 [INFO] Selecting greedy coreset: N=12000, k=2000
+2025-11-19 14:17:41,623 [INFO] Greedy selection progress: 100/2000
+2025-11-19 14:17:43,301 [INFO] Greedy selection progress: 200/2000
+2025-11-19 14:17:44,780 [INFO] Greedy selection progress: 300/2000
+2025-11-19 14:17:46,348 [INFO] Greedy selection progress: 400/2000
+2025-11-19 14:17:48,083 [INFO] Greedy selection progress: 500/2000
+2025-11-19 14:17:49,742 [INFO] Greedy selection progress: 600/2000
+2025-11-19 14:17:51,297 [INFO] Greedy selection progress: 700/2000
+2025-11-19 14:17:52,943 [INFO] Greedy selection progress: 800/2000
+2025-11-19 14:17:54,538 [INFO] Greedy selection progress: 900/2000
+2025-11-19 14:17:56,264 [INFO] Greedy selection progress: 1000/2000
+2025-11-19 14:17:57,885 [INFO] Greedy selection progress: 1100/2000
+2025-11-19 14:17:59,535 [INFO] Greedy selection progress: 1200/2000
+2025-11-19 14:18:01,115 [INFO] Greedy selection progress: 1300/2000
+2025-11-19 14:18:02,692 [INFO] Greedy selection progress: 1400/2000
+2025-11-19 14:18:04,274 [INFO] Greedy selection progress: 1500/2000
+2025-11-19 14:18:05,868 [INFO] Greedy selection progress: 1600/2000
+2025-11-19 14:18:07,508 [INFO] Greedy selection progress: 1700/2000
+2025-11-19 14:18:09,082 [INFO] Greedy selection progress: 1800/2000
+2025-11-19 14:18:10,697 [INFO] Greedy selection progress: 1900/2000
+2025-11-19 14:18:12,578 [INFO] Saved model to models\fabric\patchcore_coreset.npz
+2025-11-19 14:18:14,350 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\fabric\ground_truth\bad
+2025-11-19 14:18:16,903 [INFO] Test samples: 156 (normal: 66, anomaly: 90)
+2025-11-19 14:18:16,904 [INFO] Loaded GT masks: 90
+2025-11-19 14:22:30,550 [INFO] fabric results:
+2025-11-19 14:22:30,551 [INFO]   eAucPro_0.05: 65.3995
+2025-11-19 14:22:30,551 [INFO]   eClassF1: 73.1707
+2025-11-19 14:22:30,551 [INFO]   eSegF1: 2.6160
+2025-11-19 14:22:30,551 [INFO]   image AUROC: 0.6160
+2025-11-19 14:22:30,551 [INFO]   pixel AUROC: 0.6540
+2025-11-19 14:22:30,560 [INFO] 
+Start category: fruit_jelly
+2025-11-19 14:22:30,560 [INFO] ============================================================
+2025-11-19 14:22:30,560 [INFO] Processing category: fruit_jelly
+2025-11-19 14:22:30,560 [INFO] No existing model found for fruit_jelly at models\fruit_jelly\patchcore_coreset.npz
+2025-11-19 14:22:31,268 [INFO] Building memory bank...
+2025-11-19 14:22:39,388 [INFO] Reached max samples limit: 12000
+2025-11-19 14:22:39,981 [INFO] Final memory bank size: 12000 patches
+2025-11-19 14:22:39,986 [INFO] Selecting greedy coreset: N=12000, k=2000
+2025-11-19 14:22:41,033 [INFO] Greedy selection progress: 100/2000
+2025-11-19 14:22:42,020 [INFO] Greedy selection progress: 200/2000
+2025-11-19 14:22:43,074 [INFO] Greedy selection progress: 300/2000
+2025-11-19 14:22:44,102 [INFO] Greedy selection progress: 400/2000
+2025-11-19 14:22:45,145 [INFO] Greedy selection progress: 500/2000
+2025-11-19 14:22:46,150 [INFO] Greedy selection progress: 600/2000
+2025-11-19 14:22:47,190 [INFO] Greedy selection progress: 700/2000
+2025-11-19 14:22:48,197 [INFO] Greedy selection progress: 800/2000
+2025-11-19 14:22:49,248 [INFO] Greedy selection progress: 900/2000
+2025-11-19 14:22:50,259 [INFO] Greedy selection progress: 1000/2000
+2025-11-19 14:22:51,294 [INFO] Greedy selection progress: 1100/2000
+2025-11-19 14:22:52,298 [INFO] Greedy selection progress: 1200/2000
+2025-11-19 14:22:53,343 [INFO] Greedy selection progress: 1300/2000
+2025-11-19 14:22:54,354 [INFO] Greedy selection progress: 1400/2000
+2025-11-19 14:22:55,382 [INFO] Greedy selection progress: 1500/2000
+2025-11-19 14:22:56,405 [INFO] Greedy selection progress: 1600/2000
+2025-11-19 14:22:57,443 [INFO] Greedy selection progress: 1700/2000
+2025-11-19 14:22:58,459 [INFO] Greedy selection progress: 1800/2000
+2025-11-19 14:22:59,492 [INFO] Greedy selection progress: 1900/2000
+2025-11-19 14:23:00,627 [INFO] Saved model to models\fruit_jelly\patchcore_coreset.npz
+2025-11-19 14:23:01,279 [INFO] Found 60 GT masks in D:\motrix\mvtec_ad_2\fruit_jelly\ground_truth\bad
+2025-11-19 14:23:01,826 [INFO] Test samples: 80 (normal: 20, anomaly: 60)
+2025-11-19 14:23:01,827 [INFO] Loaded GT masks: 60
+2025-11-19 14:24:24,777 [INFO] fruit_jelly results:
+2025-11-19 14:24:24,778 [INFO]   eAucPro_0.05: 84.2891
+2025-11-19 14:24:24,778 [INFO]   eClassF1: 85.7143
+2025-11-19 14:24:24,778 [INFO]   eSegF1: 7.4184
+2025-11-19 14:24:24,778 [INFO]   image AUROC: 0.6992
+2025-11-19 14:24:24,778 [INFO]   pixel AUROC: 0.8429
+2025-11-19 14:24:24,784 [INFO] 
+Start category: rice
+2025-11-19 14:24:24,784 [INFO] ============================================================
+2025-11-19 14:24:24,784 [INFO] Processing category: rice
+2025-11-19 14:24:24,785 [INFO] No existing model found for rice at models\rice\patchcore_coreset.npz
+2025-11-19 14:24:25,432 [INFO] Building memory bank...
+2025-11-19 14:24:37,060 [INFO] Reached max samples limit: 12000
+2025-11-19 14:24:38,074 [INFO] Final memory bank size: 12000 patches
+2025-11-19 14:24:38,078 [INFO] Selecting greedy coreset: N=12000, k=2000
+2025-11-19 14:24:39,168 [INFO] Greedy selection progress: 100/2000
+2025-11-19 14:24:40,198 [INFO] Greedy selection progress: 200/2000
+2025-11-19 14:24:41,252 [INFO] Greedy selection progress: 300/2000
+2025-11-19 14:24:42,297 [INFO] Greedy selection progress: 400/2000
+2025-11-19 14:24:43,350 [INFO] Greedy selection progress: 500/2000
+2025-11-19 14:24:44,391 [INFO] Greedy selection progress: 600/2000
+2025-11-19 14:24:45,453 [INFO] Greedy selection progress: 700/2000
+2025-11-19 14:24:46,507 [INFO] Greedy selection progress: 800/2000
+2025-11-19 14:24:47,556 [INFO] Greedy selection progress: 900/2000
+2025-11-19 14:24:48,594 [INFO] Greedy selection progress: 1000/2000
+2025-11-19 14:24:49,639 [INFO] Greedy selection progress: 1100/2000
+2025-11-19 14:24:50,699 [INFO] Greedy selection progress: 1200/2000
+2025-11-19 14:24:51,732 [INFO] Greedy selection progress: 1300/2000
+2025-11-19 14:24:52,782 [INFO] Greedy selection progress: 1400/2000
+2025-11-19 14:24:53,831 [INFO] Greedy selection progress: 1500/2000
+2025-11-19 14:24:54,905 [INFO] Greedy selection progress: 1600/2000
+2025-11-19 14:24:55,939 [INFO] Greedy selection progress: 1700/2000
+2025-11-19 14:24:57,001 [INFO] Greedy selection progress: 1800/2000
+2025-11-19 14:24:58,035 [INFO] Greedy selection progress: 1900/2000
+2025-11-19 14:24:59,212 [INFO] Saved model to models\rice\patchcore_coreset.npz
+2025-11-19 14:24:59,849 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\rice\ground_truth\bad
+2025-11-19 14:25:01,122 [INFO] Test samples: 132 (normal: 42, anomaly: 90)
+2025-11-19 14:25:01,122 [INFO] Loaded GT masks: 90
+2025-11-19 14:27:33,895 [INFO] rice results:
+2025-11-19 14:27:33,895 [INFO]   eAucPro_0.05: 41.1588
+2025-11-19 14:27:33,895 [INFO]   eClassF1: 81.0811
+2025-11-19 14:27:33,895 [INFO]   eSegF1: 0.8275
+2025-11-19 14:27:33,895 [INFO]   image AUROC: 0.4624
+2025-11-19 14:27:33,896 [INFO]   pixel AUROC: 0.4116
+2025-11-19 14:27:33,902 [INFO] 
+Start category: sheet_metal
+2025-11-19 14:27:33,902 [INFO] ============================================================
+2025-11-19 14:27:33,902 [INFO] Processing category: sheet_metal
+2025-11-19 14:27:33,903 [INFO] No existing model found for sheet_metal at models\sheet_metal\patchcore_coreset.npz
+2025-11-19 14:27:34,638 [INFO] Building memory bank...
+2025-11-19 14:27:39,291 [INFO] Reached max samples limit: 12000
+2025-11-19 14:27:39,837 [INFO] Final memory bank size: 12000 patches
+2025-11-19 14:27:39,842 [INFO] Selecting greedy coreset: N=12000, k=2000
+2025-11-19 14:27:40,904 [INFO] Greedy selection progress: 100/2000
+2025-11-19 14:27:41,906 [INFO] Greedy selection progress: 200/2000
+2025-11-19 14:27:42,943 [INFO] Greedy selection progress: 300/2000
+2025-11-19 14:27:43,942 [INFO] Greedy selection progress: 400/2000
+2025-11-19 14:27:44,961 [INFO] Greedy selection progress: 500/2000
+2025-11-19 14:27:45,959 [INFO] Greedy selection progress: 600/2000
+2025-11-19 14:27:46,994 [INFO] Greedy selection progress: 700/2000
+2025-11-19 14:27:48,024 [INFO] Greedy selection progress: 800/2000
+2025-11-19 14:27:49,071 [INFO] Greedy selection progress: 900/2000
+2025-11-19 14:27:50,067 [INFO] Greedy selection progress: 1000/2000
+2025-11-19 14:27:51,110 [INFO] Greedy selection progress: 1100/2000
+2025-11-19 14:27:52,114 [INFO] Greedy selection progress: 1200/2000
+2025-11-19 14:27:53,141 [INFO] Greedy selection progress: 1300/2000
+2025-11-19 14:27:54,153 [INFO] Greedy selection progress: 1400/2000
+2025-11-19 14:27:55,188 [INFO] Greedy selection progress: 1500/2000
+2025-11-19 14:27:56,192 [INFO] Greedy selection progress: 1600/2000
+2025-11-19 14:27:57,231 [INFO] Greedy selection progress: 1700/2000
+2025-11-19 14:27:58,242 [INFO] Greedy selection progress: 1800/2000
+2025-11-19 14:27:59,263 [INFO] Greedy selection progress: 1900/2000
+2025-11-19 14:28:00,418 [INFO] Saved model to models\sheet_metal\patchcore_coreset.npz
+2025-11-19 14:28:01,095 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\sheet_metal\ground_truth\bad
+2025-11-19 14:28:02,140 [INFO] Test samples: 114 (normal: 24, anomaly: 90)
+2025-11-19 14:28:02,141 [INFO] Loaded GT masks: 90
+2025-11-19 14:29:56,424 [INFO] sheet_metal results:
+2025-11-19 14:29:56,425 [INFO]   eAucPro_0.05: 68.5987
+2025-11-19 14:29:56,425 [INFO]   eClassF1: 88.2353
+2025-11-19 14:29:56,425 [INFO]   eSegF1: 2.5048
+2025-11-19 14:29:56,425 [INFO]   image AUROC: 0.7204
+2025-11-19 14:29:56,425 [INFO]   pixel AUROC: 0.6860
+2025-11-19 14:29:56,432 [INFO] 
+Start category: vial
+2025-11-19 14:29:56,432 [INFO] ============================================================
+2025-11-19 14:29:56,432 [INFO] Processing category: vial
+2025-11-19 14:29:56,433 [INFO] No existing model found for vial at models\vial\patchcore_coreset.npz
+2025-11-19 14:29:57,100 [INFO] Building memory bank...
+2025-11-19 14:30:04,227 [INFO] Reached max samples limit: 12000
+2025-11-19 14:30:04,720 [INFO] Final memory bank size: 12000 patches
+2025-11-19 14:30:04,725 [INFO] Selecting greedy coreset: N=12000, k=2000
+2025-11-19 14:30:05,705 [INFO] Greedy selection progress: 100/2000
+2025-11-19 14:30:06,682 [INFO] Greedy selection progress: 200/2000
+2025-11-19 14:30:07,664 [INFO] Greedy selection progress: 300/2000
+2025-11-19 14:30:08,656 [INFO] Greedy selection progress: 400/2000
+2025-11-19 14:30:09,626 [INFO] Greedy selection progress: 500/2000
+2025-11-19 14:30:10,608 [INFO] Greedy selection progress: 600/2000
+2025-11-19 14:30:11,573 [INFO] Greedy selection progress: 700/2000
+2025-11-19 14:30:12,551 [INFO] Greedy selection progress: 800/2000
+2025-11-19 14:30:13,522 [INFO] Greedy selection progress: 900/2000
+2025-11-19 14:30:14,485 [INFO] Greedy selection progress: 1000/2000
+2025-11-19 14:30:15,486 [INFO] Greedy selection progress: 1100/2000
+2025-11-19 14:30:16,505 [INFO] Greedy selection progress: 1200/2000
+2025-11-19 14:30:17,522 [INFO] Greedy selection progress: 1300/2000
+2025-11-19 14:30:18,546 [INFO] Greedy selection progress: 1400/2000
+2025-11-19 14:30:19,557 [INFO] Greedy selection progress: 1500/2000
+2025-11-19 14:30:20,651 [INFO] Greedy selection progress: 1600/2000
+2025-11-19 14:30:22,235 [INFO] Greedy selection progress: 1700/2000
+2025-11-19 14:30:23,630 [INFO] Greedy selection progress: 1800/2000
+2025-11-19 14:30:25,005 [INFO] Greedy selection progress: 1900/2000
+2025-11-19 14:30:26,625 [INFO] Saved model to models\vial\patchcore_coreset.npz
+2025-11-19 14:30:28,241 [INFO] Found 105 GT masks in D:\motrix\mvtec_ad_2\vial\ground_truth\bad
+2025-11-19 14:30:29,612 [INFO] Test samples: 140 (normal: 35, anomaly: 105)
+2025-11-19 14:30:29,612 [INFO] Loaded GT masks: 105
+2025-11-19 14:36:26,267 [INFO] vial results:
+2025-11-19 14:36:26,267 [INFO]   eAucPro_0.05: 74.3743
+2025-11-19 14:36:26,267 [INFO]   eClassF1: 85.7143
+2025-11-19 14:36:26,267 [INFO]   eSegF1: 8.3011
+2025-11-19 14:36:26,268 [INFO]   image AUROC: 0.4487
+2025-11-19 14:36:26,268 [INFO]   pixel AUROC: 0.7437
+2025-11-19 14:36:26,285 [INFO] 
+Start category: wallplugs
+2025-11-19 14:36:26,285 [INFO] ============================================================
+2025-11-19 14:36:26,286 [INFO] Processing category: wallplugs
+2025-11-19 14:36:26,286 [INFO] No existing model found for wallplugs at models\wallplugs\patchcore_coreset.npz
+2025-11-19 14:36:27,881 [INFO] Building memory bank...
+2025-11-19 14:36:36,751 [INFO] Reached max samples limit: 12000
+2025-11-19 14:36:37,633 [INFO] Final memory bank size: 12000 patches
+2025-11-19 14:36:37,640 [INFO] Selecting greedy coreset: N=12000, k=2000
+2025-11-19 14:36:39,044 [INFO] Greedy selection progress: 100/2000
+2025-11-19 14:36:40,446 [INFO] Greedy selection progress: 200/2000
+2025-11-19 14:36:41,889 [INFO] Greedy selection progress: 300/2000
+2025-11-19 14:36:43,363 [INFO] Greedy selection progress: 400/2000
+2025-11-19 14:36:44,934 [INFO] Greedy selection progress: 500/2000
+2025-11-19 14:36:46,571 [INFO] Greedy selection progress: 600/2000
+2025-11-19 14:36:48,207 [INFO] Greedy selection progress: 700/2000
+2025-11-19 14:36:49,761 [INFO] Greedy selection progress: 800/2000
+2025-11-19 14:36:51,389 [INFO] Greedy selection progress: 900/2000
+2025-11-19 14:36:52,965 [INFO] Greedy selection progress: 1000/2000
+2025-11-19 14:36:54,441 [INFO] Greedy selection progress: 1100/2000
+2025-11-19 14:36:55,870 [INFO] Greedy selection progress: 1200/2000
+2025-11-19 14:36:57,311 [INFO] Greedy selection progress: 1300/2000
+2025-11-19 14:36:58,657 [INFO] Greedy selection progress: 1400/2000
+2025-11-19 14:37:00,144 [INFO] Greedy selection progress: 1500/2000
+2025-11-19 14:37:01,591 [INFO] Greedy selection progress: 1600/2000
+2025-11-19 14:37:03,119 [INFO] Greedy selection progress: 1700/2000
+2025-11-19 14:37:04,598 [INFO] Greedy selection progress: 1800/2000
+2025-11-19 14:37:06,069 [INFO] Greedy selection progress: 1900/2000
+2025-11-19 14:37:08,145 [INFO] Saved model to models\wallplugs\patchcore_coreset.npz
+2025-11-19 14:37:09,488 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\wallplugs\ground_truth\bad
+2025-11-19 14:37:11,937 [INFO] Test samples: 150 (normal: 60, anomaly: 90)
+2025-11-19 14:37:11,937 [INFO] Loaded GT masks: 90
+2025-11-19 14:43:40,044 [INFO] wallplugs results:
+2025-11-19 14:43:40,044 [INFO]   eAucPro_0.05: 57.2184
+2025-11-19 14:43:40,045 [INFO]   eClassF1: 75.0000
+2025-11-19 14:43:40,045 [INFO]   eSegF1: 2.5136
+2025-11-19 14:43:40,045 [INFO]   image AUROC: 0.7163
+2025-11-19 14:43:40,046 [INFO]   pixel AUROC: 0.5722
+2025-11-19 14:43:40,061 [INFO] 
+Start category: walnuts
+2025-11-19 14:43:40,062 [INFO] ============================================================
+2025-11-19 14:43:40,062 [INFO] Processing category: walnuts
+2025-11-19 14:43:40,062 [INFO] No existing model found for walnuts at models\walnuts\patchcore_coreset.npz
+2025-11-19 14:43:41,946 [INFO] Building memory bank...
+2025-11-19 14:43:56,897 [INFO] Reached max samples limit: 12000
+2025-11-19 14:43:58,856 [INFO] Final memory bank size: 12000 patches
+2025-11-19 14:43:58,870 [INFO] Selecting greedy coreset: N=12000, k=2000
+2025-11-19 14:44:00,858 [INFO] Greedy selection progress: 100/2000
+2025-11-19 14:44:02,632 [INFO] Greedy selection progress: 200/2000
+2025-11-19 14:44:04,451 [INFO] Greedy selection progress: 300/2000
+2025-11-19 14:44:06,326 [INFO] Greedy selection progress: 400/2000
+2025-11-19 14:44:08,059 [INFO] Greedy selection progress: 500/2000
+2025-11-19 14:44:09,875 [INFO] Greedy selection progress: 600/2000
+2025-11-19 14:44:11,663 [INFO] Greedy selection progress: 700/2000
+2025-11-19 14:44:13,468 [INFO] Greedy selection progress: 800/2000
+2025-11-19 14:44:15,194 [INFO] Greedy selection progress: 900/2000
+2025-11-19 14:44:16,935 [INFO] Greedy selection progress: 1000/2000
+2025-11-19 14:44:18,787 [INFO] Greedy selection progress: 1100/2000
+2025-11-19 14:44:20,703 [INFO] Greedy selection progress: 1200/2000
+2025-11-19 14:44:22,530 [INFO] Greedy selection progress: 1300/2000
+2025-11-19 14:44:24,282 [INFO] Greedy selection progress: 1400/2000
+2025-11-19 14:44:26,095 [INFO] Greedy selection progress: 1500/2000
+2025-11-19 14:44:27,895 [INFO] Greedy selection progress: 1600/2000
+2025-11-19 14:44:29,733 [INFO] Greedy selection progress: 1700/2000
+2025-11-19 14:44:31,485 [INFO] Greedy selection progress: 1800/2000
+2025-11-19 14:44:33,259 [INFO] Greedy selection progress: 1900/2000
+2025-11-19 14:44:35,294 [INFO] Saved model to models\walnuts\patchcore_coreset.npz
+2025-11-19 14:44:37,109 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\walnuts\ground_truth\bad
+2025-11-19 14:44:40,224 [INFO] Test samples: 150 (normal: 60, anomaly: 90)
+2025-11-19 14:44:40,225 [INFO] Loaded GT masks: 90
+2025-11-19 14:52:42,703 [INFO] walnuts results:
+2025-11-19 14:52:42,704 [INFO]   eAucPro_0.05: 77.8119
+2025-11-19 14:52:42,704 [INFO]   eClassF1: 75.0000
+2025-11-19 14:52:42,705 [INFO]   eSegF1: 5.9360
+2025-11-19 14:52:42,705 [INFO]   image AUROC: 0.6350
+2025-11-19 14:52:42,705 [INFO]   pixel AUROC: 0.7781
+2025-11-19 14:52:42,727 [INFO] 
+============================================================
+2025-11-19 14:52:42,729 [INFO] Average results:
+2025-11-19 14:52:42,879 [INFO]   Avg eAucPro_0.05: 67.5896
+2025-11-19 14:52:42,880 [INFO]   Avg eClassF1: 79.4180
+2025-11-19 14:52:42,881 [INFO]   Avg eSegF1: 3.7672
+2025-11-19 14:52:42,881 [INFO]   Avg image AUROC: 0.5933
+2025-11-19 14:52:42,881 [INFO]   Avg pixel AUROC: 0.6759
+2025-11-19 14:52:42,882 [INFO] All categories done.
+2025-11-19 14:52:42,882 [INFO] Results saved to results\metrics_logger.json

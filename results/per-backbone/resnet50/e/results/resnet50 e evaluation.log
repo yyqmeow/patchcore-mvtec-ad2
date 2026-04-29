@@ -1,0 +1,162 @@
+2025-11-18 19:56:32,254 [INFO] 
+Start category: can
+2025-11-18 19:56:32,254 [INFO] ============================================================
+2025-11-18 19:56:32,255 [INFO] Processing category: can
+2025-11-18 19:56:32,255 [INFO] No existing model found for can at models\can\patchcore_coreset.npz
+2025-11-18 19:56:33,004 [INFO] Building memory bank...
+2025-11-18 19:56:42,439 [INFO] Reached max samples limit: 20000
+2025-11-18 19:56:43,043 [INFO] Final memory bank size: 20000 patches
+2025-11-18 19:56:43,050 [INFO] Running KMeans on 20000 patches -> 3000 centers
+2025-11-18 19:58:38,130 [INFO] Saved model to models\can\patchcore_coreset.npz
+2025-11-18 19:58:38,742 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\can\ground_truth\bad
+2025-11-18 19:58:39,351 [INFO] Test samples: 162 (normal: 72, anomaly: 90)
+2025-11-18 19:58:39,352 [INFO] Loaded GT masks: 90
+2025-11-18 20:01:24,659 [INFO] can results:
+2025-11-18 20:01:24,660 [INFO]   eAucPro_0.05: 75.0535
+2025-11-18 20:01:24,660 [INFO]   eClassF1: 71.4286
+2025-11-18 20:01:24,660 [INFO]   eSegF1: 0.0155
+2025-11-18 20:01:24,660 [INFO]   image AUROC: 0.4278
+2025-11-18 20:01:24,660 [INFO]   pixel AUROC: 0.7505
+2025-11-18 20:01:24,667 [INFO] 
+Start category: fabric
+2025-11-18 20:01:24,667 [INFO] ============================================================
+2025-11-18 20:01:24,667 [INFO] Processing category: fabric
+2025-11-18 20:01:24,667 [INFO] No existing model found for fabric at models\fabric\patchcore_coreset.npz
+2025-11-18 20:01:25,449 [INFO] Building memory bank...
+2025-11-18 20:01:39,413 [INFO] Reached max samples limit: 20000
+2025-11-18 20:01:40,209 [INFO] Final memory bank size: 20000 patches
+2025-11-18 20:01:40,216 [INFO] Running KMeans on 20000 patches -> 3000 centers
+2025-11-18 20:03:35,745 [INFO] Saved model to models\fabric\patchcore_coreset.npz
+2025-11-18 20:03:36,363 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\fabric\ground_truth\bad
+2025-11-18 20:03:37,469 [INFO] Test samples: 156 (normal: 66, anomaly: 90)
+2025-11-18 20:03:37,470 [INFO] Loaded GT masks: 90
+2025-11-18 20:06:40,332 [INFO] fabric results:
+2025-11-18 20:06:40,333 [INFO]   eAucPro_0.05: 52.0762
+2025-11-18 20:06:40,333 [INFO]   eClassF1: 73.1707
+2025-11-18 20:06:40,333 [INFO]   eSegF1: 1.7098
+2025-11-18 20:06:40,333 [INFO]   image AUROC: 0.5057
+2025-11-18 20:06:40,333 [INFO]   pixel AUROC: 0.5208
+2025-11-18 20:06:40,340 [INFO] 
+Start category: fruit_jelly
+2025-11-18 20:06:40,340 [INFO] ============================================================
+2025-11-18 20:06:40,341 [INFO] Processing category: fruit_jelly
+2025-11-18 20:06:40,341 [INFO] No existing model found for fruit_jelly at models\fruit_jelly\patchcore_coreset.npz
+2025-11-18 20:06:40,979 [INFO] Building memory bank...
+2025-11-18 20:06:49,965 [INFO] Reached max samples limit: 20000
+2025-11-18 20:06:50,525 [INFO] Final memory bank size: 20000 patches
+2025-11-18 20:06:50,532 [INFO] Running KMeans on 20000 patches -> 3000 centers
+2025-11-18 20:08:43,891 [INFO] Saved model to models\fruit_jelly\patchcore_coreset.npz
+2025-11-18 20:08:44,663 [INFO] Found 60 GT masks in D:\motrix\mvtec_ad_2\fruit_jelly\ground_truth\bad
+2025-11-18 20:08:45,200 [INFO] Test samples: 80 (normal: 20, anomaly: 60)
+2025-11-18 20:08:45,201 [INFO] Loaded GT masks: 60
+2025-11-18 20:10:11,419 [INFO] fruit_jelly results:
+2025-11-18 20:10:11,420 [INFO]   eAucPro_0.05: 87.3722
+2025-11-18 20:10:11,420 [INFO]   eClassF1: 85.7143
+2025-11-18 20:10:11,420 [INFO]   eSegF1: 13.0262
+2025-11-18 20:10:11,420 [INFO]   image AUROC: 0.7617
+2025-11-18 20:10:11,420 [INFO]   pixel AUROC: 0.8737
+2025-11-18 20:10:11,426 [INFO] 
+Start category: rice
+2025-11-18 20:10:11,426 [INFO] ============================================================
+2025-11-18 20:10:11,426 [INFO] Processing category: rice
+2025-11-18 20:10:11,426 [INFO] No existing model found for rice at models\rice\patchcore_coreset.npz
+2025-11-18 20:10:12,070 [INFO] Building memory bank...
+2025-11-18 20:10:26,102 [INFO] Reached max samples limit: 20000
+2025-11-18 20:10:27,056 [INFO] Final memory bank size: 20000 patches
+2025-11-18 20:10:27,063 [INFO] Running KMeans on 20000 patches -> 3000 centers
+2025-11-18 20:12:23,300 [INFO] Saved model to models\rice\patchcore_coreset.npz
+2025-11-18 20:12:23,918 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\rice\ground_truth\bad
+2025-11-18 20:12:25,040 [INFO] Test samples: 132 (normal: 42, anomaly: 90)
+2025-11-18 20:12:25,040 [INFO] Loaded GT masks: 90
+2025-11-18 20:15:02,802 [INFO] rice results:
+2025-11-18 20:15:02,803 [INFO]   eAucPro_0.05: 49.1029
+2025-11-18 20:15:02,803 [INFO]   eClassF1: 81.0811
+2025-11-18 20:15:02,803 [INFO]   eSegF1: 0.3974
+2025-11-18 20:15:02,803 [INFO]   image AUROC: 0.4630
+2025-11-18 20:15:02,803 [INFO]   pixel AUROC: 0.4910
+2025-11-18 20:15:02,811 [INFO] 
+Start category: sheet_metal
+2025-11-18 20:15:02,811 [INFO] ============================================================
+2025-11-18 20:15:02,811 [INFO] Processing category: sheet_metal
+2025-11-18 20:15:02,811 [INFO] No existing model found for sheet_metal at models\sheet_metal\patchcore_coreset.npz
+2025-11-18 20:15:03,436 [INFO] Building memory bank...
+2025-11-18 20:15:08,820 [INFO] Reached max samples limit: 20000
+2025-11-18 20:15:09,358 [INFO] Final memory bank size: 20000 patches
+2025-11-18 20:15:09,365 [INFO] Running KMeans on 20000 patches -> 3000 centers
+2025-11-18 20:17:05,293 [INFO] Saved model to models\sheet_metal\patchcore_coreset.npz
+2025-11-18 20:17:05,916 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\sheet_metal\ground_truth\bad
+2025-11-18 20:17:06,941 [INFO] Test samples: 114 (normal: 24, anomaly: 90)
+2025-11-18 20:17:06,941 [INFO] Loaded GT masks: 90
+2025-11-18 20:19:02,812 [INFO] sheet_metal results:
+2025-11-18 20:19:02,812 [INFO]   eAucPro_0.05: 70.0615
+2025-11-18 20:19:02,812 [INFO]   eClassF1: 88.2353
+2025-11-18 20:19:02,812 [INFO]   eSegF1: 5.7743
+2025-11-18 20:19:02,812 [INFO]   image AUROC: 0.7167
+2025-11-18 20:19:02,812 [INFO]   pixel AUROC: 0.7006
+2025-11-18 20:19:02,821 [INFO] 
+Start category: vial
+2025-11-18 20:19:02,821 [INFO] ============================================================
+2025-11-18 20:19:02,821 [INFO] Processing category: vial
+2025-11-18 20:19:02,822 [INFO] No existing model found for vial at models\vial\patchcore_coreset.npz
+2025-11-18 20:19:03,474 [INFO] Building memory bank...
+2025-11-18 20:19:11,023 [INFO] Reached max samples limit: 20000
+2025-11-18 20:19:11,506 [INFO] Final memory bank size: 20000 patches
+2025-11-18 20:19:11,514 [INFO] Running KMeans on 20000 patches -> 3000 centers
+2025-11-18 20:21:08,857 [INFO] Saved model to models\vial\patchcore_coreset.npz
+2025-11-18 20:21:09,634 [INFO] Found 105 GT masks in D:\motrix\mvtec_ad_2\vial\ground_truth\bad
+2025-11-18 20:21:10,432 [INFO] Test samples: 140 (normal: 35, anomaly: 105)
+2025-11-18 20:21:10,432 [INFO] Loaded GT masks: 105
+2025-11-18 20:23:27,312 [INFO] vial results:
+2025-11-18 20:23:27,313 [INFO]   eAucPro_0.05: 80.7140
+2025-11-18 20:23:27,313 [INFO]   eClassF1: 85.7143
+2025-11-18 20:23:27,313 [INFO]   eSegF1: 10.1781
+2025-11-18 20:23:27,313 [INFO]   image AUROC: 0.3333
+2025-11-18 20:23:27,313 [INFO]   pixel AUROC: 0.8071
+2025-11-18 20:23:27,323 [INFO] 
+Start category: wallplugs
+2025-11-18 20:23:27,323 [INFO] ============================================================
+2025-11-18 20:23:27,323 [INFO] Processing category: wallplugs
+2025-11-18 20:23:27,323 [INFO] No existing model found for wallplugs at models\wallplugs\patchcore_coreset.npz
+2025-11-18 20:23:28,078 [INFO] Building memory bank...
+2025-11-18 20:23:37,005 [INFO] Reached max samples limit: 20000
+2025-11-18 20:23:37,569 [INFO] Final memory bank size: 20000 patches
+2025-11-18 20:23:37,576 [INFO] Running KMeans on 20000 patches -> 3000 centers
+2025-11-18 20:25:36,120 [INFO] Saved model to models\wallplugs\patchcore_coreset.npz
+2025-11-18 20:25:36,732 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\wallplugs\ground_truth\bad
+2025-11-18 20:25:37,810 [INFO] Test samples: 150 (normal: 60, anomaly: 90)
+2025-11-18 20:25:37,811 [INFO] Loaded GT masks: 90
+2025-11-18 20:28:11,243 [INFO] wallplugs results:
+2025-11-18 20:28:11,244 [INFO]   eAucPro_0.05: 63.8249
+2025-11-18 20:28:11,244 [INFO]   eClassF1: 75.0000
+2025-11-18 20:28:11,244 [INFO]   eSegF1: 2.8299
+2025-11-18 20:28:11,244 [INFO]   image AUROC: 0.6731
+2025-11-18 20:28:11,244 [INFO]   pixel AUROC: 0.6382
+2025-11-18 20:28:11,255 [INFO] 
+Start category: walnuts
+2025-11-18 20:28:11,255 [INFO] ============================================================
+2025-11-18 20:28:11,255 [INFO] Processing category: walnuts
+2025-11-18 20:28:11,255 [INFO] No existing model found for walnuts at models\walnuts\patchcore_coreset.npz
+2025-11-18 20:28:11,894 [INFO] Building memory bank...
+2025-11-18 20:28:25,747 [INFO] Reached max samples limit: 20000
+2025-11-18 20:28:26,711 [INFO] Final memory bank size: 20000 patches
+2025-11-18 20:28:26,718 [INFO] Running KMeans on 20000 patches -> 3000 centers
+2025-11-18 20:30:23,475 [INFO] Saved model to models\walnuts\patchcore_coreset.npz
+2025-11-18 20:30:24,222 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\walnuts\ground_truth\bad
+2025-11-18 20:30:25,375 [INFO] Test samples: 150 (normal: 60, anomaly: 90)
+2025-11-18 20:30:25,376 [INFO] Loaded GT masks: 90
+2025-11-18 20:33:23,704 [INFO] walnuts results:
+2025-11-18 20:33:23,704 [INFO]   eAucPro_0.05: 75.6320
+2025-11-18 20:33:23,704 [INFO]   eClassF1: 75.0000
+2025-11-18 20:33:23,704 [INFO]   eSegF1: 7.2928
+2025-11-18 20:33:23,704 [INFO]   image AUROC: 0.7750
+2025-11-18 20:33:23,704 [INFO]   pixel AUROC: 0.7563
+2025-11-18 20:33:23,717 [INFO] 
+============================================================
+2025-11-18 20:33:23,717 [INFO] Average results:
+2025-11-18 20:33:23,867 [INFO]   Avg eAucPro_0.05: 69.2296
+2025-11-18 20:33:23,867 [INFO]   Avg eClassF1: 79.4180
+2025-11-18 20:33:23,867 [INFO]   Avg eSegF1: 5.1530
+2025-11-18 20:33:23,868 [INFO]   Avg image AUROC: 0.5820
+2025-11-18 20:33:23,868 [INFO]   Avg pixel AUROC: 0.6923
+2025-11-18 20:33:23,868 [INFO] All categories done.
+2025-11-18 20:33:23,869 [INFO] Results saved to results\metrics_logger.json

@@ -1,0 +1,146 @@
+2025-11-13 21:25:25,314 [INFO] 
+开始处理类别: can
+2025-11-13 21:25:25,314 [INFO] ============================================================
+2025-11-13 21:25:25,314 [INFO] Processing category: can
+2025-11-13 21:25:25,316 [INFO] Too many training images (412), sampling 100
+2025-11-13 21:25:25,456 [INFO] Building optimized memory bank...
+2025-11-13 21:25:29,551 [INFO] Reached max samples limit: 30000
+2025-11-13 21:25:30,097 [INFO] Final memory bank size: 30000 patches
+2025-11-13 21:25:30,100 [INFO] Running KMeans on 30000 patches -> 2000 centers
+2025-11-13 21:25:52,443 [INFO] Saved model to models\can\patchcore_coreset.npz
+2025-11-13 21:25:52,449 [INFO] Start evaluation on test_public ...
+2025-11-13 21:26:11,906 [WARNING] Pixel ROC AUC failed: Only one class present in y_true. ROC AUC score is not defined in that case.
+2025-11-13 21:26:11,910 [INFO] can 评估结果:
+2025-11-13 21:26:11,910 [INFO]   eAucPro_0.05: 0.4517
+2025-11-13 21:26:11,910 [INFO]   eClassF1: 0.3804
+2025-11-13 21:26:11,910 [INFO]   eSegF1: 0.0000
+2025-11-13 21:26:11,910 [INFO]   图像AUROC: 0.4755
+2025-11-13 21:26:11,910 [INFO]   像素AUROC: 0.0000
+2025-11-13 21:26:11,920 [INFO] 
+开始处理类别: fabric
+2025-11-13 21:26:11,920 [INFO] ============================================================
+2025-11-13 21:26:11,920 [INFO] Processing category: fabric
+2025-11-13 21:26:11,922 [INFO] Too many training images (387), sampling 100
+2025-11-13 21:26:12,023 [INFO] Building optimized memory bank...
+2025-11-13 21:26:17,964 [INFO] Reached max samples limit: 30000
+2025-11-13 21:26:18,858 [INFO] Final memory bank size: 30000 patches
+2025-11-13 21:26:18,864 [INFO] Running KMeans on 30000 patches -> 2000 centers
+2025-11-13 21:26:43,950 [INFO] Saved model to models\fabric\patchcore_coreset.npz
+2025-11-13 21:26:43,953 [INFO] Start evaluation on test_public ...
+2025-11-13 21:27:18,770 [WARNING] Pixel ROC AUC failed: Only one class present in y_true. ROC AUC score is not defined in that case.
+2025-11-13 21:27:18,778 [INFO] fabric 评估结果:
+2025-11-13 21:27:18,778 [INFO]   eAucPro_0.05: 0.6084
+2025-11-13 21:27:18,778 [INFO]   eClassF1: 0.5123
+2025-11-13 21:27:18,779 [INFO]   eSegF1: 0.0000
+2025-11-13 21:27:18,779 [INFO]   图像AUROC: 0.6404
+2025-11-13 21:27:18,779 [INFO]   像素AUROC: 0.0000
+2025-11-13 21:27:18,790 [INFO] 
+开始处理类别: fruit_jelly
+2025-11-13 21:27:18,790 [INFO] ============================================================
+2025-11-13 21:27:18,790 [INFO] Processing category: fruit_jelly
+2025-11-13 21:27:18,794 [INFO] Too many training images (263), sampling 100
+2025-11-13 21:27:18,897 [INFO] Building optimized memory bank...
+2025-11-13 21:27:23,094 [INFO] Reached max samples limit: 30000
+2025-11-13 21:27:23,595 [INFO] Final memory bank size: 30000 patches
+2025-11-13 21:27:23,599 [INFO] Running KMeans on 30000 patches -> 2000 centers
+2025-11-13 21:27:46,927 [INFO] Saved model to models\fruit_jelly\patchcore_coreset.npz
+2025-11-13 21:27:46,933 [INFO] Start evaluation on test_public ...
+2025-11-13 21:27:56,779 [WARNING] Pixel ROC AUC failed: Only one class present in y_true. ROC AUC score is not defined in that case.
+2025-11-13 21:27:56,782 [INFO] fruit_jelly 评估结果:
+2025-11-13 21:27:56,782 [INFO]   eAucPro_0.05: 0.7307
+2025-11-13 21:27:56,783 [INFO]   eClassF1: 0.6153
+2025-11-13 21:27:56,783 [INFO]   eSegF1: 0.0000
+2025-11-13 21:27:56,784 [INFO]   图像AUROC: 0.7692
+2025-11-13 21:27:56,784 [INFO]   像素AUROC: 0.0000
+2025-11-13 21:27:56,791 [INFO] 
+开始处理类别: rice
+2025-11-13 21:27:56,791 [INFO] ============================================================
+2025-11-13 21:27:56,791 [INFO] Processing category: rice
+2025-11-13 21:27:56,808 [INFO] Too many training images (313), sampling 100
+2025-11-13 21:27:56,914 [INFO] Building optimized memory bank...
+2025-11-13 21:28:02,995 [INFO] Reached max samples limit: 30000
+2025-11-13 21:28:03,887 [INFO] Final memory bank size: 30000 patches
+2025-11-13 21:28:03,893 [INFO] Running KMeans on 30000 patches -> 2000 centers
+2025-11-13 21:28:29,527 [INFO] Saved model to models\rice\patchcore_coreset.npz
+2025-11-13 21:28:29,530 [INFO] Start evaluation on test_public ...
+2025-11-13 21:29:00,068 [WARNING] Pixel ROC AUC failed: Only one class present in y_true. ROC AUC score is not defined in that case.
+2025-11-13 21:29:00,075 [INFO] rice 评估结果:
+2025-11-13 21:29:00,075 [INFO]   eAucPro_0.05: 0.5466
+2025-11-13 21:29:00,076 [INFO]   eClassF1: 0.4603
+2025-11-13 21:29:00,077 [INFO]   eSegF1: 0.0000
+2025-11-13 21:29:00,077 [INFO]   图像AUROC: 0.5754
+2025-11-13 21:29:00,077 [INFO]   像素AUROC: 0.0000
+2025-11-13 21:29:00,092 [INFO] 
+开始处理类别: sheet_metal
+2025-11-13 21:29:00,092 [INFO] ============================================================
+2025-11-13 21:29:00,092 [INFO] Processing category: sheet_metal
+2025-11-13 21:29:00,098 [INFO] Too many training images (137), sampling 100
+2025-11-13 21:29:00,205 [INFO] Building optimized memory bank...
+2025-11-13 21:29:04,090 [INFO] Reached max samples limit: 30000
+2025-11-13 21:29:04,603 [INFO] Final memory bank size: 30000 patches
+2025-11-13 21:29:04,607 [INFO] Running KMeans on 30000 patches -> 2000 centers
+2025-11-13 21:29:30,192 [INFO] Saved model to models\sheet_metal\patchcore_coreset.npz
+2025-11-13 21:29:30,198 [INFO] Start evaluation on test_public ...
+2025-11-13 21:29:48,830 [WARNING] Pixel ROC AUC failed: Only one class present in y_true. ROC AUC score is not defined in that case.
+2025-11-13 21:29:48,843 [INFO] sheet_metal 评估结果:
+2025-11-13 21:29:48,844 [INFO]   eAucPro_0.05: 0.4420
+2025-11-13 21:29:48,844 [INFO]   eClassF1: 0.3722
+2025-11-13 21:29:48,844 [INFO]   eSegF1: 0.0000
+2025-11-13 21:29:48,844 [INFO]   图像AUROC: 0.4653
+2025-11-13 21:29:48,845 [INFO]   像素AUROC: 0.0000
+2025-11-13 21:29:48,863 [INFO] 
+开始处理类别: vial
+2025-11-13 21:29:48,863 [INFO] ============================================================
+2025-11-13 21:29:48,863 [INFO] Processing category: vial
+2025-11-13 21:29:48,885 [INFO] Too many training images (291), sampling 100
+2025-11-13 21:29:49,178 [INFO] Building optimized memory bank...
+2025-11-13 21:29:53,429 [INFO] Reached max samples limit: 30000
+2025-11-13 21:29:53,801 [INFO] Final memory bank size: 30000 patches
+2025-11-13 21:29:53,810 [INFO] Running KMeans on 30000 patches -> 2000 centers
+2025-11-13 21:30:35,790 [INFO] Saved model to models\vial\patchcore_coreset.npz
+2025-11-13 21:30:35,794 [INFO] Start evaluation on test_public ...
+2025-11-13 21:30:55,621 [WARNING] Pixel ROC AUC failed: Only one class present in y_true. ROC AUC score is not defined in that case.
+2025-11-13 21:30:55,633 [INFO] vial 评估结果:
+2025-11-13 21:30:55,633 [INFO]   eAucPro_0.05: 0.6496
+2025-11-13 21:30:55,633 [INFO]   eClassF1: 0.5470
+2025-11-13 21:30:55,633 [INFO]   eSegF1: 0.0000
+2025-11-13 21:30:55,633 [INFO]   图像AUROC: 0.6838
+2025-11-13 21:30:55,634 [INFO]   像素AUROC: 0.0000
+2025-11-13 21:30:55,650 [INFO] 
+开始处理类别: wallplugs
+2025-11-13 21:30:55,650 [INFO] ============================================================
+2025-11-13 21:30:55,650 [INFO] Processing category: wallplugs
+2025-11-13 21:30:55,663 [INFO] Too many training images (293), sampling 100
+2025-11-13 21:30:55,952 [INFO] Building optimized memory bank...
+2025-11-13 21:31:00,313 [INFO] Reached max samples limit: 30000
+2025-11-13 21:31:00,847 [INFO] Final memory bank size: 30000 patches
+2025-11-13 21:31:00,855 [INFO] Running KMeans on 30000 patches -> 2000 centers
+2025-11-13 21:31:43,490 [INFO] Saved model to models\wallplugs\patchcore_coreset.npz
+2025-11-13 21:31:43,498 [INFO] Start evaluation on test_public ...
+2025-11-13 21:32:12,690 [WARNING] Pixel ROC AUC failed: Only one class present in y_true. ROC AUC score is not defined in that case.
+2025-11-13 21:32:12,703 [INFO] wallplugs 评估结果:
+2025-11-13 21:32:12,703 [INFO]   eAucPro_0.05: 0.5568
+2025-11-13 21:32:12,703 [INFO]   eClassF1: 0.4689
+2025-11-13 21:32:12,703 [INFO]   eSegF1: 0.0000
+2025-11-13 21:32:12,703 [INFO]   图像AUROC: 0.5861
+2025-11-13 21:32:12,704 [INFO]   像素AUROC: 0.0000
+2025-11-13 21:32:12,720 [INFO] 
+开始处理类别: walnuts
+2025-11-13 21:32:12,721 [INFO] ============================================================
+2025-11-13 21:32:12,721 [INFO] Processing category: walnuts
+2025-11-13 21:32:12,732 [INFO] Too many training images (432), sampling 100
+2025-11-13 21:32:12,931 [INFO] Building optimized memory bank...
+2025-11-13 21:32:19,374 [INFO] Reached max samples limit: 30000
+2025-11-13 21:32:20,317 [INFO] Final memory bank size: 30000 patches
+2025-11-13 21:32:20,330 [INFO] Running KMeans on 30000 patches -> 2000 centers
+2025-11-13 21:33:08,531 [INFO] Saved model to models\walnuts\patchcore_coreset.npz
+2025-11-13 21:33:08,534 [INFO] Start evaluation on test_public ...
+2025-11-13 21:34:12,674 [WARNING] Pixel ROC AUC failed: Only one class present in y_true. ROC AUC score is not defined in that case.
+2025-11-13 21:34:12,684 [INFO] walnuts 评估结果:
+2025-11-13 21:34:12,684 [INFO]   eAucPro_0.05: 0.6437
+2025-11-13 21:34:12,685 [INFO]   eClassF1: 0.5421
+2025-11-13 21:34:12,685 [INFO]   eSegF1: 0.0000
+2025-11-13 21:34:12,685 [INFO]   图像AUROC: 0.6776
+2025-11-13 21:34:12,685 [INFO]   像素AUROC: 0.0000
+2025-11-13 21:34:12,708 [INFO] 全部类别处理完成.
+2025-11-13 21:34:12,708 [INFO] 结果已保存到 results\metrics_logger.json

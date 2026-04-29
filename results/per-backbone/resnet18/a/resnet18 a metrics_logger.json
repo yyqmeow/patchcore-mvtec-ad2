@@ -1,0 +1,98 @@
+[
+    {
+        "category": "can",
+        "eAucPro_0.05": 0.4516898148148148,
+        "eClassF1": 0.3803703703703704,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.4516898148148148,
+        "eClassF1_mixed": 0.3803703703703704,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.475462962962963,
+        "pixel_auc": 0.0,
+        "timestamp": "13.11.25"
+    },
+    {
+        "category": "fabric",
+        "eAucPro_0.05": 0.6083838383838384,
+        "eClassF1": 0.5123232323232324,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.6083838383838384,
+        "eClassF1_mixed": 0.5123232323232324,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.6404040404040404,
+        "pixel_auc": 0.0,
+        "timestamp": "13.11.25"
+    },
+    {
+        "category": "fruit_jelly",
+        "eAucPro_0.05": 0.7307083333333333,
+        "eClassF1": 0.6153333333333334,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.7307083333333333,
+        "eClassF1_mixed": 0.6153333333333334,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.7691666666666667,
+        "pixel_auc": 0.0,
+        "timestamp": "13.11.25"
+    },
+    {
+        "category": "rice",
+        "eAucPro_0.05": 0.5466269841269841,
+        "eClassF1": 0.4603174603174603,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.5466269841269841,
+        "eClassF1_mixed": 0.4603174603174603,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.5753968253968254,
+        "pixel_auc": 0.0,
+        "timestamp": "13.11.25"
+    },
+    {
+        "category": "sheet_metal",
+        "eAucPro_0.05": 0.4420138888888889,
+        "eClassF1": 0.37222222222222223,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.4420138888888889,
+        "eClassF1_mixed": 0.37222222222222223,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.4652777777777778,
+        "pixel_auc": 0.0,
+        "timestamp": "13.11.25"
+    },
+    {
+        "category": "vial",
+        "eAucPro_0.05": 0.6496190476190477,
+        "eClassF1": 0.5470476190476191,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.6496190476190477,
+        "eClassF1_mixed": 0.5470476190476191,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.6838095238095239,
+        "pixel_auc": 0.0,
+        "timestamp": "13.11.25"
+    },
+    {
+        "category": "wallplugs",
+        "eAucPro_0.05": 0.5568055555555556,
+        "eClassF1": 0.4688888888888889,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.5568055555555556,
+        "eClassF1_mixed": 0.4688888888888889,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.5861111111111111,
+        "pixel_auc": 0.0,
+        "timestamp": "13.11.25"
+    },
+    {
+        "category": "walnuts",
+        "eAucPro_0.05": 0.643712962962963,
+        "eClassF1": 0.5420740740740742,
+        "eSegF1": 0.0,
+        "eAucPro_0.05_mixed": 0.643712962962963,
+        "eClassF1_mixed": 0.5420740740740742,
+        "eSegF1_mixed": 0.0,
+        "image_auc": 0.6775925925925926,
+        "pixel_auc": 0.0,
+        "timestamp": "13.11.25"
+    }
+]

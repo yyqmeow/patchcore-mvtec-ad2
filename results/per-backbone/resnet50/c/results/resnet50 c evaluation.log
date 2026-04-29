@@ -1,0 +1,177 @@
+2025-11-14 20:58:45,172 [INFO] 
+开始处理类别: can
+2025-11-14 20:58:45,172 [INFO] ============================================================
+2025-11-14 20:58:45,172 [INFO] Processing category: can
+2025-11-14 20:58:45,172 [INFO] No existing model found for can at models\can\patchcore_coreset.npz
+2025-11-14 20:58:45,641 [INFO] Building memory bank...
+2025-11-14 20:58:58,767 [INFO] Reached max samples limit: 50000
+2025-11-14 20:58:59,444 [INFO] Final memory bank size: 50000 patches
+2025-11-14 20:58:59,492 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-14 22:00:36,520 [INFO] Saved model to models\can\patchcore_coreset.npz
+2025-11-14 22:00:36,530 [INFO] Start evaluation on test_public ...
+2025-11-14 22:00:36,780 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\can\ground_truth\bad
+2025-11-14 22:00:38,641 [INFO] 测试样本: 162个 (正常: 72, 异常: 90)
+2025-11-14 22:00:38,642 [INFO] 加载的掩码数量: 90
+2025-11-14 22:00:56,884 [WARNING] No anomaly pixels in ground truth
+2025-11-14 22:00:56,952 [WARNING] oClassF1 calculation failed: name 'metrics' is not defined
+2025-11-14 22:00:57,018 [INFO] can 评估结果:
+2025-11-14 22:00:57,019 [INFO]   eAucPro_0.05: 0.0000
+2025-11-14 22:00:57,019 [INFO]   eClassF1: 0.0000
+2025-11-14 22:00:57,019 [INFO]   eSegF1: 0.0000
+2025-11-14 22:00:57,020 [INFO]   图像AUROC: 0.4748
+2025-11-14 22:00:57,021 [INFO]   像素AUROC: 0.5000
+2025-11-14 22:00:57,028 [INFO] 
+开始处理类别: fabric
+2025-11-14 22:00:57,028 [INFO] ============================================================
+2025-11-14 22:00:57,028 [INFO] Processing category: fabric
+2025-11-14 22:00:57,028 [INFO] No existing model found for fabric at models\fabric\patchcore_coreset.npz
+2025-11-14 22:00:57,281 [INFO] Building memory bank...
+2025-11-14 22:01:22,222 [INFO] Reached max samples limit: 50000
+2025-11-14 22:01:23,313 [INFO] Final memory bank size: 50000 patches
+2025-11-14 22:01:23,362 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-14 23:03:14,164 [INFO] Saved model to models\fabric\patchcore_coreset.npz
+2025-11-14 23:03:14,172 [INFO] Start evaluation on test_public ...
+2025-11-14 23:03:14,415 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\fabric\ground_truth\bad
+2025-11-14 23:03:18,513 [INFO] 测试样本: 156个 (正常: 66, 异常: 90)
+2025-11-14 23:03:18,513 [INFO] 加载的掩码数量: 90
+2025-11-14 23:03:51,600 [WARNING] No anomaly pixels in ground truth
+2025-11-14 23:03:51,662 [WARNING] oClassF1 calculation failed: name 'metrics' is not defined
+2025-11-14 23:03:51,723 [INFO] fabric 评估结果:
+2025-11-14 23:03:51,723 [INFO]   eAucPro_0.05: 0.0000
+2025-11-14 23:03:51,723 [INFO]   eClassF1: 0.0000
+2025-11-14 23:03:51,724 [INFO]   eSegF1: 0.0000
+2025-11-14 23:03:51,724 [INFO]   图像AUROC: 0.5266
+2025-11-14 23:03:51,724 [INFO]   像素AUROC: 0.5000
+2025-11-14 23:03:51,732 [INFO] 
+开始处理类别: fruit_jelly
+2025-11-14 23:03:51,732 [INFO] ============================================================
+2025-11-14 23:03:51,733 [INFO] Processing category: fruit_jelly
+2025-11-14 23:03:51,733 [INFO] No existing model found for fruit_jelly at models\fruit_jelly\patchcore_coreset.npz
+2025-11-14 23:03:51,999 [INFO] Building memory bank...
+2025-11-14 23:04:05,383 [INFO] Reached max samples limit: 50000
+2025-11-14 23:04:06,025 [INFO] Final memory bank size: 50000 patches
+2025-11-14 23:04:06,074 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-15 00:02:38,801 [INFO] Saved model to models\fruit_jelly\patchcore_coreset.npz
+2025-11-15 00:02:38,809 [INFO] Start evaluation on test_public ...
+2025-11-15 00:02:39,058 [INFO] Found 60 GT masks in D:\motrix\mvtec_ad_2\fruit_jelly\ground_truth\bad
+2025-11-15 00:02:40,807 [INFO] 测试样本: 80个 (正常: 20, 异常: 60)
+2025-11-15 00:02:40,807 [INFO] 加载的掩码数量: 60
+2025-11-15 00:02:49,661 [WARNING] No anomaly pixels in ground truth
+2025-11-15 00:02:49,695 [WARNING] oClassF1 calculation failed: name 'metrics' is not defined
+2025-11-15 00:02:49,726 [INFO] fruit_jelly 评估结果:
+2025-11-15 00:02:49,727 [INFO]   eAucPro_0.05: 0.0000
+2025-11-15 00:02:49,727 [INFO]   eClassF1: 0.0000
+2025-11-15 00:02:49,727 [INFO]   eSegF1: 0.0000
+2025-11-15 00:02:49,727 [INFO]   图像AUROC: 0.7825
+2025-11-15 00:02:49,727 [INFO]   像素AUROC: 0.5000
+2025-11-15 00:02:49,732 [INFO] 
+开始处理类别: rice
+2025-11-15 00:02:49,732 [INFO] ============================================================
+2025-11-15 00:02:49,732 [INFO] Processing category: rice
+2025-11-15 00:02:49,732 [INFO] No existing model found for rice at models\rice\patchcore_coreset.npz
+2025-11-15 00:02:49,996 [INFO] Building memory bank...
+2025-11-15 00:03:15,696 [INFO] Reached max samples limit: 50000
+2025-11-15 00:03:16,736 [INFO] Final memory bank size: 50000 patches
+2025-11-15 00:03:16,785 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-15 01:02:02,760 [INFO] Saved model to models\rice\patchcore_coreset.npz
+2025-11-15 01:02:02,769 [INFO] Start evaluation on test_public ...
+2025-11-15 01:02:03,167 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\rice\ground_truth\bad
+2025-11-15 01:02:07,274 [INFO] 测试样本: 132个 (正常: 42, 异常: 90)
+2025-11-15 01:02:07,274 [INFO] 加载的掩码数量: 90
+2025-11-15 01:02:35,214 [WARNING] No anomaly pixels in ground truth
+2025-11-15 01:02:35,270 [WARNING] oClassF1 calculation failed: name 'metrics' is not defined
+2025-11-15 01:02:35,322 [INFO] rice 评估结果:
+2025-11-15 01:02:35,322 [INFO]   eAucPro_0.05: 0.0000
+2025-11-15 01:02:35,322 [INFO]   eClassF1: 0.0000
+2025-11-15 01:02:35,322 [INFO]   eSegF1: 0.0000
+2025-11-15 01:02:35,322 [INFO]   图像AUROC: 0.6410
+2025-11-15 01:02:35,322 [INFO]   像素AUROC: 0.5000
+2025-11-15 01:02:35,330 [INFO] 
+开始处理类别: sheet_metal
+2025-11-15 01:02:35,330 [INFO] ============================================================
+2025-11-15 01:02:35,330 [INFO] Processing category: sheet_metal
+2025-11-15 01:02:35,330 [INFO] No existing model found for sheet_metal at models\sheet_metal\patchcore_coreset.npz
+2025-11-15 01:02:35,590 [INFO] Building memory bank...
+2025-11-15 01:02:42,561 [INFO] Final memory bank size: 26852 patches
+2025-11-15 01:02:42,589 [INFO] Running KMeans on 26852 patches -> 10000 centers
+2025-11-15 01:55:49,943 [INFO] Saved model to models\sheet_metal\patchcore_coreset.npz
+2025-11-15 01:55:49,949 [INFO] Start evaluation on test_public ...
+2025-11-15 01:55:50,201 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\sheet_metal\ground_truth\bad
+2025-11-15 01:55:53,832 [INFO] 测试样本: 114个 (正常: 24, 异常: 90)
+2025-11-15 01:55:53,832 [INFO] 加载的掩码数量: 90
+2025-11-15 01:56:05,311 [WARNING] No anomaly pixels in ground truth
+2025-11-15 01:56:05,355 [WARNING] oClassF1 calculation failed: name 'metrics' is not defined
+2025-11-15 01:56:05,399 [INFO] sheet_metal 评估结果:
+2025-11-15 01:56:05,399 [INFO]   eAucPro_0.05: 0.0000
+2025-11-15 01:56:05,399 [INFO]   eClassF1: 0.0000
+2025-11-15 01:56:05,399 [INFO]   eSegF1: 0.0000
+2025-11-15 01:56:05,399 [INFO]   图像AUROC: 0.6009
+2025-11-15 01:56:05,400 [INFO]   像素AUROC: 0.5000
+2025-11-15 01:56:05,405 [INFO] 
+开始处理类别: vial
+2025-11-15 01:56:05,405 [INFO] ============================================================
+2025-11-15 01:56:05,405 [INFO] Processing category: vial
+2025-11-15 01:56:05,405 [INFO] No existing model found for vial at models\vial\patchcore_coreset.npz
+2025-11-15 01:56:05,665 [INFO] Building memory bank...
+2025-11-15 01:56:14,581 [INFO] Reached max samples limit: 50000
+2025-11-15 01:56:15,261 [INFO] Final memory bank size: 50000 patches
+2025-11-15 01:56:15,312 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-15 02:53:37,153 [INFO] Saved model to models\vial\patchcore_coreset.npz
+2025-11-15 02:53:37,162 [INFO] Start evaluation on test_public ...
+2025-11-15 02:53:37,405 [INFO] Found 105 GT masks in D:\motrix\mvtec_ad_2\vial\ground_truth\bad
+2025-11-15 02:53:39,969 [INFO] 测试样本: 140个 (正常: 35, 异常: 105)
+2025-11-15 02:53:39,969 [INFO] 加载的掩码数量: 105
+2025-11-15 02:53:51,500 [WARNING] No anomaly pixels in ground truth
+2025-11-15 02:53:51,557 [WARNING] oClassF1 calculation failed: name 'metrics' is not defined
+2025-11-15 02:53:51,615 [INFO] vial 评估结果:
+2025-11-15 02:53:51,616 [INFO]   eAucPro_0.05: 0.0000
+2025-11-15 02:53:51,616 [INFO]   eClassF1: 0.0000
+2025-11-15 02:53:51,616 [INFO]   eSegF1: 0.0000
+2025-11-15 02:53:51,616 [INFO]   图像AUROC: 0.7856
+2025-11-15 02:53:51,616 [INFO]   像素AUROC: 0.5000
+2025-11-15 02:53:51,622 [INFO] 
+开始处理类别: wallplugs
+2025-11-15 02:53:51,622 [INFO] ============================================================
+2025-11-15 02:53:51,623 [INFO] Processing category: wallplugs
+2025-11-15 02:53:51,623 [INFO] No existing model found for wallplugs at models\wallplugs\patchcore_coreset.npz
+2025-11-15 02:53:51,887 [INFO] Building memory bank...
+2025-11-15 02:54:04,926 [INFO] Reached max samples limit: 50000
+2025-11-15 02:54:05,597 [INFO] Final memory bank size: 50000 patches
+2025-11-15 02:54:05,651 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-15 03:53:54,857 [INFO] Saved model to models\wallplugs\patchcore_coreset.npz
+2025-11-15 03:53:54,865 [INFO] Start evaluation on test_public ...
+2025-11-15 03:53:55,106 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\wallplugs\ground_truth\bad
+2025-11-15 03:53:59,362 [INFO] 测试样本: 150个 (正常: 60, 异常: 90)
+2025-11-15 03:53:59,362 [INFO] 加载的掩码数量: 90
+2025-11-15 03:54:15,707 [WARNING] No anomaly pixels in ground truth
+2025-11-15 03:54:15,767 [WARNING] oClassF1 calculation failed: name 'metrics' is not defined
+2025-11-15 03:54:15,826 [INFO] wallplugs 评估结果:
+2025-11-15 03:54:15,826 [INFO]   eAucPro_0.05: 0.0000
+2025-11-15 03:54:15,826 [INFO]   eClassF1: 0.0000
+2025-11-15 03:54:15,827 [INFO]   eSegF1: 0.0000
+2025-11-15 03:54:15,827 [INFO]   图像AUROC: 0.6059
+2025-11-15 03:54:15,827 [INFO]   像素AUROC: 0.5000
+2025-11-15 03:54:15,834 [INFO] 
+开始处理类别: walnuts
+2025-11-15 03:54:15,834 [INFO] ============================================================
+2025-11-15 03:54:15,834 [INFO] Processing category: walnuts
+2025-11-15 03:54:15,835 [INFO] No existing model found for walnuts at models\walnuts\patchcore_coreset.npz
+2025-11-15 03:54:16,119 [INFO] Building memory bank...
+2025-11-15 03:54:41,267 [INFO] Reached max samples limit: 50000
+2025-11-15 03:54:42,290 [INFO] Final memory bank size: 50000 patches
+2025-11-15 03:54:42,340 [INFO] Running KMeans on 50000 patches -> 10000 centers
+2025-11-15 04:54:32,556 [INFO] Saved model to models\walnuts\patchcore_coreset.npz
+2025-11-15 04:54:32,564 [INFO] Start evaluation on test_public ...
+2025-11-15 04:54:32,807 [INFO] Found 90 GT masks in D:\motrix\mvtec_ad_2\walnuts\ground_truth\bad
+2025-11-15 04:54:36,915 [INFO] 测试样本: 150个 (正常: 60, 异常: 90)
+2025-11-15 04:54:36,915 [INFO] 加载的掩码数量: 90
+2025-11-15 04:55:08,413 [WARNING] No anomaly pixels in ground truth
+2025-11-15 04:55:08,472 [WARNING] oClassF1 calculation failed: name 'metrics' is not defined
+2025-11-15 04:55:08,530 [INFO] walnuts 评估结果:
+2025-11-15 04:55:08,530 [INFO]   eAucPro_0.05: 0.0000
+2025-11-15 04:55:08,530 [INFO]   eClassF1: 0.0000
+2025-11-15 04:55:08,530 [INFO]   eSegF1: 0.0000
+2025-11-15 04:55:08,530 [INFO]   图像AUROC: 0.7011
+2025-11-15 04:55:08,530 [INFO]   像素AUROC: 0.5000
+2025-11-15 04:55:08,538 [INFO] 全部类别处理完成.
+2025-11-15 04:55:08,538 [INFO] 结果已保存到 results\metrics_logger.json

@@ -1,0 +1,82 @@
+[
+    {
+        "category": "can",
+        "eAucPro_0.05": 55.7822005835004,
+        "eClassF1": 71.42857142857143,
+        "eSegF1": 0.023661938504311964,
+        "image_auc": 0.4523148148148147,
+        "pixel_auc": 0.557822005835004,
+        "coreset_size": 2000,
+        "timestamp": "19.11.25"
+    },
+    {
+        "category": "fabric",
+        "eAucPro_0.05": 46.91599768466964,
+        "eClassF1": 73.17073170731707,
+        "eSegF1": 2.360876897133221,
+        "image_auc": 0.6028619528619529,
+        "pixel_auc": 0.4691599768466964,
+        "coreset_size": 2000,
+        "timestamp": "19.11.25"
+    },
+    {
+        "category": "fruit_jelly",
+        "eAucPro_0.05": 41.256129839265355,
+        "eClassF1": 85.71428571428571,
+        "eSegF1": 1.9942735359571286,
+        "image_auc": 0.205,
+        "pixel_auc": 0.41256129839265354,
+        "coreset_size": 2000,
+        "timestamp": "19.11.25"
+    },
+    {
+        "category": "rice",
+        "eAucPro_0.05": 53.87078810801488,
+        "eClassF1": 81.08108108108108,
+        "eSegF1": 0.4203800288729864,
+        "image_auc": 0.44047619047619047,
+        "pixel_auc": 0.5387078810801488,
+        "coreset_size": 2000,
+        "timestamp": "19.11.25"
+    },
+    {
+        "category": "sheet_metal",
+        "eAucPro_0.05": 50.24960561988172,
+        "eClassF1": 88.23529411764706,
+        "eSegF1": 2.0487838987495195,
+        "image_auc": 0.6925925925925926,
+        "pixel_auc": 0.5024960561988172,
+        "coreset_size": 2000,
+        "timestamp": "19.11.25"
+    },
+    {
+        "category": "vial",
+        "eAucPro_0.05": 46.05236745553425,
+        "eClassF1": 85.71428571428571,
+        "eSegF1": 4.156281538727467,
+        "image_auc": 0.4119727891156463,
+        "pixel_auc": 0.46052367455534254,
+        "coreset_size": 2000,
+        "timestamp": "19.11.25"
+    },
+    {
+        "category": "wallplugs",
+        "eAucPro_0.05": 54.028980951199244,
+        "eClassF1": 74.99999999999999,
+        "eSegF1": 0.42449660147510443,
+        "image_auc": 0.365,
+        "pixel_auc": 0.5402898095119925,
+        "coreset_size": 2000,
+        "timestamp": "19.11.25"
+    },
+    {
+        "category": "walnuts",
+        "eAucPro_0.05": 59.49563072480088,
+        "eClassF1": 74.99999999999999,
+        "eSegF1": 2.8636103941547972,
+        "image_auc": 0.6433333333333333,
+        "pixel_auc": 0.5949563072480089,
+        "coreset_size": 2000,
+        "timestamp": "19.11.25"
+    }
+]

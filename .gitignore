@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Virtual envs
+.venv/
+venv/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local data and large run artifacts (not tracked)
+# - Re-trained PatchCore memory banks beyond the curated `models/` set
+# - Heatmap dumps from large evaluation runs
+data/
+runs/
+*.faiss.tmp
+*.pt
+*.pth
+*.ckpt
+
+# LaTeX build artifacts
+report/latex/**/*.aux
+report/latex/**/*.log
+report/latex/**/*.out
+report/latex/**/*.toc
+report/latex/**/*.bbl
+report/latex/**/*.blg
+report/latex/**/*.fls
+report/latex/**/*.fdb_latexmk
+report/latex/**/*.synctex.gz
