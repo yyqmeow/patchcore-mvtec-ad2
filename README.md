@@ -2,8 +2,8 @@
 
 Investigating why PatchCore fails on the MVTec AD 2 benchmark and proposing simple modifications that close most of the pixel-level segmentation gap.
 
-> Course project for **IMT4392 — Deep Learning** at NTNU.
-> Author: **Yayang Qian** ([report PDF](report/IMT4392_Deep_Learning_Report_Yayang_Qian.pdf))
+> Companion code for the paper *Recovering Total Recall: Multi-Scale Feature Fusion for High-Resolution Industrial Anomaly Localization*, submitted to **IEEE ETFA 2026** (Track 6, Computer Vision and Human–Machine Interaction in Industrial and Factory Automation).
+> Author: **Yayang Qian**, NTNU. Earlier course report: [PDF](report/IMT4392_Deep_Learning_Report_Yayang_Qian.pdf).
 
 <p align="center">
   <img src="docs/figures/patchcore_flowchart.png" alt="PatchCore pipeline" width="640">
