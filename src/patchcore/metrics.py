@@ -78,94 +78,130 @@ def compute_pixelwise_retrieval_metrics(anomaly_segmentations, ground_truth_mask
     }
 
 
-def compute_pro_score(anomaly_segmentations, ground_truth_masks):
+def compute_pro_score(anomaly_segmentations, ground_truth_masks, fpr_limit=0.05,
+                      num_thresholds=200):
     """
-    Computes Per-Region Overlap (PRO) score for anomaly segmentations.
-    PRO score measures the overlap between predicted and ground truth regions
-    across different thresholds.
-    
-    Standard implementation: Use fixed number of thresholds from 0 to 1,
-    compute PRO at each threshold, then integrate.
-    
+    Standard AU-PRO@k% (Bergmann et al., MVTec convention).
+
+    PRO = average per-region recall across all connected anomalous regions
+    (NOT IoU). FPR = fraction of non-anomalous pixels predicted positive.
+    AU-PRO@k% = trapezoidal integral of PRO over FPR in [0, k%], normalized
+    by k%.
+
     Args:
-        anomaly_segmentations: [list of np.arrays or np.array] [NxHxW] Contains
-                                generated segmentation masks (normalized to [0, 1]).
-        ground_truth_masks: [list of np.arrays or np.array] [NxHxW] Contains
-                            predefined ground truth segmentation masks
-    
+        anomaly_segmentations: list/array, shape [N, H, W], anomaly score maps
+                               (any range; thresholds are picked from the
+                               actual score distribution).
+        ground_truth_masks:    list/array, shape [N, H, W], binary GT masks.
+        fpr_limit:             FPR cutoff for the integral (default 0.05 = 5%).
+        num_thresholds:        number of thresholds to sample.
+
     Returns:
-        dict: Contains 'pro' (AUPRO score), 'pro_curve' (PRO values at different thresholds)
+        dict with:
+            'pro':         AU-PRO@k% in [0, 1]
+            'pro_curve':   PRO values at each threshold (sorted by FPR)
+            'fpr_curve':   matching FPR values
+            'fpr_limit':   the limit used
     """
+    from scipy import ndimage
+
     if isinstance(anomaly_segmentations, list):
         anomaly_segmentations = np.stack(anomaly_segmentations)
     if isinstance(ground_truth_masks, list):
         ground_truth_masks = np.stack(ground_truth_masks)
-    
-    # Normalize segmentations to [0, 1] if not already
-    seg_min = anomaly_segmentations.min()
-    seg_max = anomaly_segmentations.max()
-    if seg_max > seg_min:
-        anomaly_segmentations = (anomaly_segmentations - seg_min) / (seg_max - seg_min + 1e-8)
-    
-    # Convert to binary masks (0 or 1)
+
     if ground_truth_masks.dtype != np.uint8:
         ground_truth_masks = (ground_truth_masks > 0.5).astype(np.uint8)
-    
-    # Use fixed number of thresholds from 0 to 1 (standard approach)
-    num_thresholds = 200
-    thresholds = np.linspace(0, 1, num_thresholds)
-    
-    pro_values = []
-    
-    from scipy import ndimage
-    
+
+    # Sample thresholds from the actual score distribution (more efficient
+    # than uniform 0..1 when scores are concentrated in a small range).
+    flat = anomaly_segmentations.reshape(-1)
+    if flat.size > 100_000:
+        flat = np.random.default_rng(0).choice(flat, 100_000, replace=False)
+    qs = np.linspace(0.0, 1.0, num_thresholds)
+    thresholds = np.quantile(flat, qs)
+    # Make strictly decreasing for high-to-low sweep, deduplicated.
+    thresholds = np.unique(thresholds)[::-1]
+
+    # Pre-compute connected-component labeling for each GT mask.
+    gt_components = []
+    for i in range(len(ground_truth_masks)):
+        labeled, num = ndimage.label(ground_truth_masks[i])
+        gt_components.append((labeled, num))
+
+    total_negatives = int((ground_truth_masks == 0).sum())
+    if total_negatives == 0:
+        return {"pro": 0.0, "pro_curve": [], "fpr_curve": [],
+                "fpr_limit": fpr_limit}
+
+    pros, fprs = [], []
     for threshold in thresholds:
-        # Create binary predictions at this threshold
-        predictions = (anomaly_segmentations >= threshold).astype(np.uint8)
-        
-        # Compute per-region overlap
-        per_region_overlaps = []
-        
+        predictions = (anomaly_segmentations >= threshold)
+
+        # PRO: per-region recall, averaged
+        recalls = []
         for i in range(len(predictions)):
-            pred_mask = predictions[i]
-            gt_mask = ground_truth_masks[i]
-            
-            # Get connected components in ground truth
-            labeled_gt, num_regions = ndimage.label(gt_mask)
-            
+            labeled_gt, num_regions = gt_components[i]
             if num_regions == 0:
-                # No ground truth regions, skip this image
                 continue
-            
-            # For each connected component in ground truth
+            pred_i = predictions[i]
             for region_id in range(1, num_regions + 1):
-                gt_region = (labeled_gt == region_id).astype(np.uint8)
-                
-                # Compute overlap: intersection over union for this region
-                intersection = np.logical_and(pred_mask, gt_region).sum()
-                union = np.logical_or(pred_mask, gt_region).sum()
-                
-                if union > 0:
-                    overlap = intersection / union
-                    per_region_overlaps.append(overlap)
-        
-        if len(per_region_overlaps) > 0:
-            pro_value = np.mean(per_region_overlaps)
-            pro_values.append(pro_value)
-        else:
-            pro_values.append(0.0)
-    
-    # Compute AUPRO (Area Under PRO curve)
-    # Since thresholds are uniformly spaced from 0 to 1, we can simply integrate
-    if len(pro_values) > 0:
-        # Use trapezoidal rule: area = sum of (y[i] + y[i+1]) / 2 * dx
-        # Since dx = 1/(num_thresholds-1) and thresholds go from 0 to 1
-        aupro = np.trapz(pro_values, thresholds)
+                region = (labeled_gt == region_id)
+                region_size = int(region.sum())
+                if region_size == 0:
+                    continue
+                tp = int(np.logical_and(pred_i, region).sum())
+                recalls.append(tp / region_size)
+        pro = float(np.mean(recalls)) if recalls else 0.0
+
+        # FPR over non-anomalous pixels
+        fp = int(np.logical_and(predictions, ground_truth_masks == 0).sum())
+        fpr = fp / total_negatives
+
+        pros.append(pro)
+        fprs.append(fpr)
+
+    pros = np.asarray(pros)
+    fprs = np.asarray(fprs)
+
+    # Sort by FPR ascending; deduplicate for monotonic integration.
+    order = np.argsort(fprs)
+    fprs = fprs[order]
+    pros = pros[order]
+
+    # Keep points up to fpr_limit, plus a synthesized boundary point at
+    # exactly fpr_limit by linear interpolation if we cross it.
+    in_range = fprs <= fpr_limit
+    fprs_clip = fprs[in_range]
+    pros_clip = pros[in_range]
+
+    if fprs_clip.size == 0:
+        return {"pro": 0.0, "pro_curve": pros.tolist(),
+                "fpr_curve": fprs.tolist(), "fpr_limit": fpr_limit}
+
+    # Add an interpolated end-point at fpr_limit if the curve continues past it.
+    above_idx = np.where(fprs > fpr_limit)[0]
+    if above_idx.size > 0:
+        i_above = above_idx[0]
+        f_lo, p_lo = fprs[i_above - 1], pros[i_above - 1]
+        f_hi, p_hi = fprs[i_above], pros[i_above]
+        if f_hi > f_lo:
+            t = (fpr_limit - f_lo) / (f_hi - f_lo)
+            p_at_limit = p_lo + t * (p_hi - p_lo)
+            fprs_clip = np.concatenate([fprs_clip, [fpr_limit]])
+            pros_clip = np.concatenate([pros_clip, [p_at_limit]])
+
+    if fprs_clip.size < 2:
+        # Cannot integrate a single point.
+        aupro = float(pros_clip[0]) if pros_clip.size else 0.0
     else:
-        aupro = 0.0
-    
+        # numpy 2.x renamed trapz -> trapezoid
+        _trapz = np.trapezoid if hasattr(np, "trapezoid") else np.trapz
+        aupro = float(_trapz(pros_clip, fprs_clip) / fpr_limit)
+
     return {
         "pro": aupro,
-        "pro_curve": pro_values,
-        "thresholds": thresholds,
+        "pro_curve": pros.tolist(),
+        "fpr_curve": fprs.tolist(),
+        "fpr_limit": fpr_limit,
     }
